@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */; };
+		A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */; };
+		A1C4AF4126E838FE006CE2C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF4026E838FE006CE2C9 /* ViewController.swift */; };
+		A1C4AF4426E838FE006CE2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4226E838FE006CE2C9 /* Main.storyboard */; };
+		A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4526E83901006CE2C9 /* Assets.xcassets */; };
+		A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */; };
+		A1C4AF6626E83DBB006CE2C9 /* bjnmediacapturer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5126E83DBB006CE2C9 /* bjnmediacapturer.xcframework */; };
+		A1C4AF6726E83DBB006CE2C9 /* bjnmediacapturer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5126E83DBB006CE2C9 /* bjnmediacapturer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF6826E83DBB006CE2C9 /* BJNiOSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5226E83DBB006CE2C9 /* BJNiOSCore.xcframework */; };
+		A1C4AF6926E83DBB006CE2C9 /* BJNiOSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5226E83DBB006CE2C9 /* BJNiOSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF6A26E83DBB006CE2C9 /* PubNub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5326E83DBB006CE2C9 /* PubNub.xcframework */; };
+		A1C4AF6B26E83DBB006CE2C9 /* PubNub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5326E83DBB006CE2C9 /* PubNub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF6C26E83DBB006CE2C9 /* BJNHTTP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5426E83DBB006CE2C9 /* BJNHTTP.xcframework */; };
+		A1C4AF6D26E83DBB006CE2C9 /* BJNHTTP.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5426E83DBB006CE2C9 /* BJNHTTP.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF6E26E83DBB006CE2C9 /* BJNAPIClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5526E83DBB006CE2C9 /* BJNAPIClient.xcframework */; };
+		A1C4AF6F26E83DBB006CE2C9 /* BJNAPIClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5526E83DBB006CE2C9 /* BJNAPIClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7026E83DBB006CE2C9 /* BlueJeansSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5626E83DBB006CE2C9 /* BlueJeansSDK.xcframework */; };
+		A1C4AF7126E83DBB006CE2C9 /* BlueJeansSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5626E83DBB006CE2C9 /* BlueJeansSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7226E83DBB006CE2C9 /* Mixpanel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5726E83DBB006CE2C9 /* Mixpanel.xcframework */; };
+		A1C4AF7326E83DBB006CE2C9 /* Mixpanel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5726E83DBB006CE2C9 /* Mixpanel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7426E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5826E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework */; };
+		A1C4AF7526E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5826E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7626E83DBB006CE2C9 /* BJNClientBaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5926E83DBB006CE2C9 /* BJNClientBaseCore.xcframework */; };
+		A1C4AF7726E83DBC006CE2C9 /* BJNClientBaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5926E83DBB006CE2C9 /* BJNClientBaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7826E83DBC006CE2C9 /* fiberClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5A26E83DBB006CE2C9 /* fiberClient.xcframework */; };
+		A1C4AF7926E83DBC006CE2C9 /* fiberClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5A26E83DBB006CE2C9 /* fiberClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7A26E83DBC006CE2C9 /* fiber.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5B26E83DBB006CE2C9 /* fiber.xcframework */; };
+		A1C4AF7B26E83DBC006CE2C9 /* fiber.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5B26E83DBB006CE2C9 /* fiber.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7C26E83DBC006CE2C9 /* MMWormhole.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5C26E83DBB006CE2C9 /* MMWormhole.xcframework */; };
+		A1C4AF7D26E83DBC006CE2C9 /* MMWormhole.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5C26E83DBB006CE2C9 /* MMWormhole.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF7E26E83DBC006CE2C9 /* dvclient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5D26E83DBB006CE2C9 /* dvclient.xcframework */; };
+		A1C4AF7F26E83DBC006CE2C9 /* dvclient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5D26E83DBB006CE2C9 /* dvclient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8026E83DBC006CE2C9 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5E26E83DBB006CE2C9 /* Reachability.xcframework */; };
+		A1C4AF8126E83DBC006CE2C9 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5E26E83DBB006CE2C9 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8226E83DBC006CE2C9 /* BJNClientCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5F26E83DBB006CE2C9 /* BJNClientCore.xcframework */; };
+		A1C4AF8326E83DBC006CE2C9 /* BJNClientCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF5F26E83DBB006CE2C9 /* BJNClientCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8426E83DBC006CE2C9 /* Swinject.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6026E83DBB006CE2C9 /* Swinject.xcframework */; };
+		A1C4AF8526E83DBC006CE2C9 /* Swinject.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6026E83DBB006CE2C9 /* Swinject.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8626E83DBC006CE2C9 /* BJNClientSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6126E83DBB006CE2C9 /* BJNClientSDK.xcframework */; };
+		A1C4AF8726E83DBC006CE2C9 /* BJNClientSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6126E83DBB006CE2C9 /* BJNClientSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8826E83DBC006CE2C9 /* videoeffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6226E83DBB006CE2C9 /* videoeffects.xcframework */; };
+		A1C4AF8926E83DBC006CE2C9 /* videoeffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6226E83DBB006CE2C9 /* videoeffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8A26E83DBC006CE2C9 /* koko.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6326E83DBB006CE2C9 /* koko.xcframework */; };
+		A1C4AF8B26E83DBD006CE2C9 /* koko.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6326E83DBB006CE2C9 /* koko.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8C26E83DBD006CE2C9 /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6426E83DBB006CE2C9 /* CocoaLumberjack.xcframework */; };
+		A1C4AF8D26E83DBD006CE2C9 /* CocoaLumberjack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6426E83DBB006CE2C9 /* CocoaLumberjack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF8E26E83DBD006CE2C9 /* SocketRocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6526E83DBB006CE2C9 /* SocketRocket.xcframework */; };
+		A1C4AF8F26E83DBD006CE2C9 /* SocketRocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4AF6526E83DBB006CE2C9 /* SocketRocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C4AF9226E84912006CE2C9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF9126E84912006CE2C9 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C4AF9026E83DBD006CE2C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1C4AF8326E83DBC006CE2C9 /* BJNClientCore.xcframework in Embed Frameworks */,
+				A1C4AF7D26E83DBC006CE2C9 /* MMWormhole.xcframework in Embed Frameworks */,
+				A1C4AF8526E83DBC006CE2C9 /* Swinject.xcframework in Embed Frameworks */,
+				A1C4AF8F26E83DBD006CE2C9 /* SocketRocket.xcframework in Embed Frameworks */,
+				A1C4AF7326E83DBB006CE2C9 /* Mixpanel.xcframework in Embed Frameworks */,
+				A1C4AF8926E83DBC006CE2C9 /* videoeffects.xcframework in Embed Frameworks */,
+				A1C4AF7926E83DBC006CE2C9 /* fiberClient.xcframework in Embed Frameworks */,
+				A1C4AF7B26E83DBC006CE2C9 /* fiber.xcframework in Embed Frameworks */,
+				A1C4AF8D26E83DBD006CE2C9 /* CocoaLumberjack.xcframework in Embed Frameworks */,
+				A1C4AF6D26E83DBB006CE2C9 /* BJNHTTP.xcframework in Embed Frameworks */,
+				A1C4AF7526E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */,
+				A1C4AF7726E83DBC006CE2C9 /* BJNClientBaseCore.xcframework in Embed Frameworks */,
+				A1C4AF6F26E83DBB006CE2C9 /* BJNAPIClient.xcframework in Embed Frameworks */,
+				A1C4AF8126E83DBC006CE2C9 /* Reachability.xcframework in Embed Frameworks */,
+				A1C4AF7F26E83DBC006CE2C9 /* dvclient.xcframework in Embed Frameworks */,
+				A1C4AF8726E83DBC006CE2C9 /* BJNClientSDK.xcframework in Embed Frameworks */,
+				A1C4AF6726E83DBB006CE2C9 /* bjnmediacapturer.xcframework in Embed Frameworks */,
+				A1C4AF6926E83DBB006CE2C9 /* BJNiOSCore.xcframework in Embed Frameworks */,
+				A1C4AF7126E83DBB006CE2C9 /* BlueJeansSDK.xcframework in Embed Frameworks */,
+				A1C4AF8B26E83DBD006CE2C9 /* koko.xcframework in Embed Frameworks */,
+				A1C4AF6B26E83DBB006CE2C9 /* PubNub.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1C4AF3926E838FE006CE2C9 /* HelloBlueJeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBlueJeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1C4AF4026E838FE006CE2C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C4AF4326E838FE006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C4AF4526E83901006CE2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C4AF4826E83901006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1C4AF4A26E83901006CE2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C4AF5126E83DBB006CE2C9 /* bjnmediacapturer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = bjnmediacapturer.xcframework; path = ../Frameworks/bjnmediacapturer.xcframework; sourceTree = "<group>"; };
+		A1C4AF5226E83DBB006CE2C9 /* BJNiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNiOSCore.xcframework; path = ../Frameworks/BJNiOSCore.xcframework; sourceTree = "<group>"; };
+		A1C4AF5326E83DBB006CE2C9 /* PubNub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNub.xcframework; path = ../Frameworks/PubNub.xcframework; sourceTree = "<group>"; };
+		A1C4AF5426E83DBB006CE2C9 /* BJNHTTP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNHTTP.xcframework; path = ../Frameworks/BJNHTTP.xcframework; sourceTree = "<group>"; };
+		A1C4AF5526E83DBB006CE2C9 /* BJNAPIClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNAPIClient.xcframework; path = ../Frameworks/BJNAPIClient.xcframework; sourceTree = "<group>"; };
+		A1C4AF5626E83DBB006CE2C9 /* BlueJeansSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BlueJeansSDK.xcframework; path = ../Frameworks/BlueJeansSDK.xcframework; sourceTree = "<group>"; };
+		A1C4AF5726E83DBB006CE2C9 /* Mixpanel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Mixpanel.xcframework; path = ../Frameworks/Mixpanel.xcframework; sourceTree = "<group>"; };
+		A1C4AF5826E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = ../Frameworks/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
+		A1C4AF5926E83DBB006CE2C9 /* BJNClientBaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientBaseCore.xcframework; path = ../Frameworks/BJNClientBaseCore.xcframework; sourceTree = "<group>"; };
+		A1C4AF5A26E83DBB006CE2C9 /* fiberClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiberClient.xcframework; path = ../Frameworks/fiberClient.xcframework; sourceTree = "<group>"; };
+		A1C4AF5B26E83DBB006CE2C9 /* fiber.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiber.xcframework; path = ../Frameworks/fiber.xcframework; sourceTree = "<group>"; };
+		A1C4AF5C26E83DBB006CE2C9 /* MMWormhole.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MMWormhole.xcframework; path = ../Frameworks/MMWormhole.xcframework; sourceTree = "<group>"; };
+		A1C4AF5D26E83DBB006CE2C9 /* dvclient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = dvclient.xcframework; path = ../Frameworks/dvclient.xcframework; sourceTree = "<group>"; };
+		A1C4AF5E26E83DBB006CE2C9 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../Frameworks/Reachability.xcframework; sourceTree = "<group>"; };
+		A1C4AF5F26E83DBB006CE2C9 /* BJNClientCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientCore.xcframework; path = ../Frameworks/BJNClientCore.xcframework; sourceTree = "<group>"; };
+		A1C4AF6026E83DBB006CE2C9 /* Swinject.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Swinject.xcframework; path = ../Frameworks/Swinject.xcframework; sourceTree = "<group>"; };
+		A1C4AF6126E83DBB006CE2C9 /* BJNClientSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientSDK.xcframework; path = ../Frameworks/BJNClientSDK.xcframework; sourceTree = "<group>"; };
+		A1C4AF6226E83DBB006CE2C9 /* videoeffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = videoeffects.xcframework; path = ../Frameworks/videoeffects.xcframework; sourceTree = "<group>"; };
+		A1C4AF6326E83DBB006CE2C9 /* koko.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = koko.xcframework; path = ../Frameworks/koko.xcframework; sourceTree = "<group>"; };
+		A1C4AF6426E83DBB006CE2C9 /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = ../Frameworks/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
+		A1C4AF6526E83DBB006CE2C9 /* SocketRocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketRocket.xcframework; path = ../Frameworks/SocketRocket.xcframework; sourceTree = "<group>"; };
+		A1C4AF9126E84912006CE2C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C4AF3626E838FE006CE2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4AF8226E83DBC006CE2C9 /* BJNClientCore.xcframework in Frameworks */,
+				A1C4AF7C26E83DBC006CE2C9 /* MMWormhole.xcframework in Frameworks */,
+				A1C4AF8426E83DBC006CE2C9 /* Swinject.xcframework in Frameworks */,
+				A1C4AF8E26E83DBD006CE2C9 /* SocketRocket.xcframework in Frameworks */,
+				A1C4AF7226E83DBB006CE2C9 /* Mixpanel.xcframework in Frameworks */,
+				A1C4AF8826E83DBC006CE2C9 /* videoeffects.xcframework in Frameworks */,
+				A1C4AF7826E83DBC006CE2C9 /* fiberClient.xcframework in Frameworks */,
+				A1C4AF7A26E83DBC006CE2C9 /* fiber.xcframework in Frameworks */,
+				A1C4AF8C26E83DBD006CE2C9 /* CocoaLumberjack.xcframework in Frameworks */,
+				A1C4AF6C26E83DBB006CE2C9 /* BJNHTTP.xcframework in Frameworks */,
+				A1C4AF7426E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				A1C4AF7626E83DBB006CE2C9 /* BJNClientBaseCore.xcframework in Frameworks */,
+				A1C4AF6E26E83DBB006CE2C9 /* BJNAPIClient.xcframework in Frameworks */,
+				A1C4AF8026E83DBC006CE2C9 /* Reachability.xcframework in Frameworks */,
+				A1C4AF7E26E83DBC006CE2C9 /* dvclient.xcframework in Frameworks */,
+				A1C4AF8626E83DBC006CE2C9 /* BJNClientSDK.xcframework in Frameworks */,
+				A1C4AF6626E83DBB006CE2C9 /* bjnmediacapturer.xcframework in Frameworks */,
+				A1C4AF6826E83DBB006CE2C9 /* BJNiOSCore.xcframework in Frameworks */,
+				A1C4AF7026E83DBB006CE2C9 /* BlueJeansSDK.xcframework in Frameworks */,
+				A1C4AF8A26E83DBC006CE2C9 /* koko.xcframework in Frameworks */,
+				A1C4AF6A26E83DBB006CE2C9 /* PubNub.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C4AF3026E838FE006CE2C9 = {
+			isa = PBXGroup;
+			children = (
+				A1C4AF9126E84912006CE2C9 /* README.md */,
+				A1C4AF3B26E838FE006CE2C9 /* HelloBlueJeans */,
+				A1C4AF3A26E838FE006CE2C9 /* Products */,
+				A1C4AF5026E83DBB006CE2C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C4AF3A26E838FE006CE2C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4AF3926E838FE006CE2C9 /* HelloBlueJeans.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C4AF3B26E838FE006CE2C9 /* HelloBlueJeans */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */,
+				A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */,
+				A1C4AF4026E838FE006CE2C9 /* ViewController.swift */,
+				A1C4AF4226E838FE006CE2C9 /* Main.storyboard */,
+				A1C4AF4526E83901006CE2C9 /* Assets.xcassets */,
+				A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */,
+				A1C4AF4A26E83901006CE2C9 /* Info.plist */,
+			);
+			path = HelloBlueJeans;
+			sourceTree = "<group>";
+		};
+		A1C4AF5026E83DBB006CE2C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4AF5526E83DBB006CE2C9 /* BJNAPIClient.xcframework */,
+				A1C4AF5926E83DBB006CE2C9 /* BJNClientBaseCore.xcframework */,
+				A1C4AF5F26E83DBB006CE2C9 /* BJNClientCore.xcframework */,
+				A1C4AF6126E83DBB006CE2C9 /* BJNClientSDK.xcframework */,
+				A1C4AF5426E83DBB006CE2C9 /* BJNHTTP.xcframework */,
+				A1C4AF5226E83DBB006CE2C9 /* BJNiOSCore.xcframework */,
+				A1C4AF5126E83DBB006CE2C9 /* bjnmediacapturer.xcframework */,
+				A1C4AF5626E83DBB006CE2C9 /* BlueJeansSDK.xcframework */,
+				A1C4AF6426E83DBB006CE2C9 /* CocoaLumberjack.xcframework */,
+				A1C4AF5826E83DBB006CE2C9 /* CocoaLumberjackSwift.xcframework */,
+				A1C4AF5D26E83DBB006CE2C9 /* dvclient.xcframework */,
+				A1C4AF5B26E83DBB006CE2C9 /* fiber.xcframework */,
+				A1C4AF5A26E83DBB006CE2C9 /* fiberClient.xcframework */,
+				A1C4AF6326E83DBB006CE2C9 /* koko.xcframework */,
+				A1C4AF5726E83DBB006CE2C9 /* Mixpanel.xcframework */,
+				A1C4AF5C26E83DBB006CE2C9 /* MMWormhole.xcframework */,
+				A1C4AF5326E83DBB006CE2C9 /* PubNub.xcframework */,
+				A1C4AF5E26E83DBB006CE2C9 /* Reachability.xcframework */,
+				A1C4AF6526E83DBB006CE2C9 /* SocketRocket.xcframework */,
+				A1C4AF6026E83DBB006CE2C9 /* Swinject.xcframework */,
+				A1C4AF6226E83DBB006CE2C9 /* videoeffects.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C4AF3826E838FE006CE2C9 /* HelloBlueJeans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C4AF4D26E83901006CE2C9 /* Build configuration list for PBXNativeTarget "HelloBlueJeans" */;
+			buildPhases = (
+				A1C4AF3526E838FE006CE2C9 /* Sources */,
+				A1C4AF3626E838FE006CE2C9 /* Frameworks */,
+				A1C4AF3726E838FE006CE2C9 /* Resources */,
+				A1C4AF9026E83DBD006CE2C9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloBlueJeans;
+			productName = HelloBlueJeans;
+			productReference = A1C4AF3926E838FE006CE2C9 /* HelloBlueJeans.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C4AF3126E838FE006CE2C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A1C4AF3826E838FE006CE2C9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A1C4AF3426E838FE006CE2C9 /* Build configuration list for PBXProject "HelloBlueJeans" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C4AF3026E838FE006CE2C9;
+			productRefGroup = A1C4AF3A26E838FE006CE2C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C4AF3826E838FE006CE2C9 /* HelloBlueJeans */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C4AF3726E838FE006CE2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4AF9226E84912006CE2C9 /* README.md in Resources */,
+				A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */,
+				A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */,
+				A1C4AF4426E838FE006CE2C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C4AF3526E838FE006CE2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4AF4126E838FE006CE2C9 /* ViewController.swift in Sources */,
+				A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */,
+				A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1C4AF4226E838FE006CE2C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C4AF4326E838FE006CE2C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C4AF4826E83901006CE2C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C4AF4B26E83901006CE2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C4AF4C26E83901006CE2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C4AF4E26E83901006CE2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZPS9CYP86;
+				INFOPLIST_FILE = HelloBlueJeans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yout.uniqueIdentifier.HelloBlueJeans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1C4AF4F26E83901006CE2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZPS9CYP86;
+				INFOPLIST_FILE = HelloBlueJeans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yout.uniqueIdentifier.HelloBlueJeans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C4AF3426E838FE006CE2C9 /* Build configuration list for PBXProject "HelloBlueJeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4AF4B26E83901006CE2C9 /* Debug */,
+				A1C4AF4C26E83901006CE2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C4AF4D26E83901006CE2C9 /* Build configuration list for PBXNativeTarget "HelloBlueJeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4AF4E26E83901006CE2C9 /* Debug */,
+				A1C4AF4F26E83901006CE2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C4AF3126E838FE006CE2C9 /* Project object */;
+}
