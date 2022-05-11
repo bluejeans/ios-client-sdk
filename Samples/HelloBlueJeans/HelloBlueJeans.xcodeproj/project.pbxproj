@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D508E27F29EAC002CD747 /* BJNSubscription.swift */; };
+		79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */; };
+		79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */; };
+		79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */; };
+		79F6795427CD9375005710F7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795327CD9375005710F7 /* MenuTableViewController.swift */; };
+		79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795D27D023A1005710F7 /* LogUploadViewController.swift */; };
+		79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */; };
+		79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */; };
 		A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */; };
 		A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */; };
-		A1C4AF4126E838FE006CE2C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF4026E838FE006CE2C9 /* ViewController.swift */; };
-		A1C4AF4426E838FE006CE2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4226E838FE006CE2C9 /* Main.storyboard */; };
+		A1C4AF4126E838FE006CE2C9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF4026E838FE006CE2C9 /* MeetingViewController.swift */; };
+		A1C4AF4426E838FE006CE2C9 /* Meeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4226E838FE006CE2C9 /* Meeting.storyboard */; };
 		A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4526E83901006CE2C9 /* Assets.xcassets */; };
 		A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */; };
 		A1C4AF9226E84912006CE2C9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF9126E84912006CE2C9 /* README.md */; };
@@ -103,11 +111,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		794D508E27F29EAC002CD747 /* BJNSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJNSubscription.swift; sourceTree = "<group>"; };
+		79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogUploadStoryboard.storyboard; sourceTree = "<group>"; };
+		79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentShareReceiveStoryboard.storyboard; sourceTree = "<group>"; };
+		79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClosedCaptioningStoryboard.storyboard; sourceTree = "<group>"; };
+		79F6795327CD9375005710F7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		79F6795D27D023A1005710F7 /* LogUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUploadViewController.swift; sourceTree = "<group>"; };
+		79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedCaptioningViewController.swift; sourceTree = "<group>"; };
+		79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentShareReceiveViewController.swift; sourceTree = "<group>"; };
 		A1C4AF3926E838FE006CE2C9 /* HelloBlueJeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBlueJeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1C4AF4026E838FE006CE2C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1C4AF4326E838FE006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C4AF4026E838FE006CE2C9 /* MeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
+		A1C4AF4326E838FE006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Meeting.storyboard; sourceTree = "<group>"; };
 		A1C4AF4526E83901006CE2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C4AF4826E83901006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C4AF4A26E83901006CE2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,6 +190,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79E587CB27E00EB1008B6791 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4AF4026E838FE006CE2C9 /* MeetingViewController.swift */,
+				79F6795327CD9375005710F7 /* MenuTableViewController.swift */,
+				A1C4AF4226E838FE006CE2C9 /* Meeting.storyboard */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		79E587CC27E00ED7008B6791 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				79F6795D27D023A1005710F7 /* LogUploadViewController.swift */,
+				79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		79E587CD27E00EFC008B6791 /* ClosedCaptioning */ = {
+			isa = PBXGroup;
+			children = (
+				79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */,
+				79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */,
+			);
+			path = ClosedCaptioning;
+			sourceTree = "<group>";
+		};
+		79E587CF27E00F3A008B6791 /* ContentSharing */ = {
+			isa = PBXGroup;
+			children = (
+				79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */,
+				79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */,
+			);
+			path = ContentSharing;
+			sourceTree = "<group>";
+		};
 		A1C4AF3026E838FE006CE2C9 = {
 			isa = PBXGroup;
 			children = (
@@ -195,10 +248,13 @@
 		A1C4AF3B26E838FE006CE2C9 /* HelloBlueJeans */ = {
 			isa = PBXGroup;
 			children = (
+				79E587CF27E00F3A008B6791 /* ContentSharing */,
+				79E587CD27E00EFC008B6791 /* ClosedCaptioning */,
+				79E587CC27E00ED7008B6791 /* Logging */,
+				79E587CB27E00EB1008B6791 /* Meeting */,
 				A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */,
 				A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */,
-				A1C4AF4026E838FE006CE2C9 /* ViewController.swift */,
-				A1C4AF4226E838FE006CE2C9 /* Main.storyboard */,
+				794D508E27F29EAC002CD747 /* BJNSubscription.swift */,
 				A1C4AF4526E83901006CE2C9 /* Assets.xcassets */,
 				A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */,
 				A1C4AF4A26E83901006CE2C9 /* Info.plist */,
@@ -295,10 +351,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */,
 				A1C4AF9226E84912006CE2C9 /* README.md in Resources */,
 				A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */,
+				79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */,
+				79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */,
 				A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */,
-				A1C4AF4426E838FE006CE2C9 /* Main.storyboard in Resources */,
+				A1C4AF4426E838FE006CE2C9 /* Meeting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,21 +368,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C4AF4126E838FE006CE2C9 /* ViewController.swift in Sources */,
+				79F6795427CD9375005710F7 /* MenuTableViewController.swift in Sources */,
+				79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */,
+				A1C4AF4126E838FE006CE2C9 /* MeetingViewController.swift in Sources */,
 				A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */,
+				79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */,
 				A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */,
+				79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */,
+				794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1C4AF4226E838FE006CE2C9 /* Main.storyboard */ = {
+		A1C4AF4226E838FE006CE2C9 /* Meeting.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A1C4AF4326E838FE006CE2C9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Meeting.storyboard;
 			sourceTree = "<group>";
 		};
 		A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */ = {

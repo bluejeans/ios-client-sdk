@@ -269,6 +269,23 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Customization.html">Customization</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CustomizationParams.html">CustomizationParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CustomBackground.html">CustomBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Customization.html#/s:12BJNClientSDK22ConfigureGradientLayera">ConfigureGradientLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Defaults.html">Defaults</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -277,6 +294,18 @@
           <div class="section-content">
             
             <h1 id='change-log' class='heading'>Change Log</h1>
+<h2 id='version-1-4-0' class='heading'>Version 1.4.0</h2>
+
+<hr>
+<h3 id='added' class='heading'>Added</h3>
+
+<ul>
+<li>720p 16x9 Capture Support (on supported devices)</li>
+<li><code>getSelfView()</code> and <code>getContentView()</code> methods that return a UIView that will automatically maintain the correct aspect ratio for it&rsquo;s video/content</li>
+<li>Color customization of video layouts, allows setting the background colors/gradients of the remote video views
+### Deprecated</li>
+<li><code>getSelfViewInstance()</code> and <code>getContentReceiveInstance()</code> deprecated in favour of the above <code>getSelfView()</code> and <code>getContentView()</code> methods. Now return a non-optional UIView</li>
+</ul>
 <h2 id='version-1-3-0' class='heading'>Version 1.3.0</h2>
 <h3 id='added' class='heading'>Added</h3>
 

@@ -32,15 +32,17 @@ The design of the SDK emphasizes **simplicity**. Developers can quickly integrat
 - Waiting Room Participant Support
 - Waiting Room Moderation Support
 - Moderator Controls
-- Media Stream Enablement, mute content video and audio streams.
+- Media Stream Enablement, mute content video and audio streams
 - Active speaker (Who's talking)
-
-New in 1.3.0
+- "Recording has started, stopped, is on" audio notifications
 - Swift Package Manager Support
-- Module Stability (support for all Xcode Versions >= 12.5)
-- "Recording has started, stopped, is on" audio notifications will play by default when the meeting is being recorded.
 
-## Current Version: 1.3.0
+### New in 1.4.0
+- 720p camera capture
+- Self and content views automatically update as the aspect ratio changes
+- Color customization of video layouts 
+
+## Current Version: 1.4.0
 
 ## Pre-requisites
 
@@ -77,13 +79,13 @@ Integrate the SDK using the below guidelines and use SDK APIs to join a meeting 
 ## Integration Steps
 
 ### Swift Package Manager
-1. Add the URL `https://github.com/bluejeans/ios-client-sdk` using Swift Package Manager in Xcode, the SDK supports Swift Package Manager from version `1.3.0`
+1. Add the URL `https://github.com/bluejeans/ios-client-sdk` using Swift Package Manager in Xcode, the SDK supports Swift Package Manager from version `1.4.0`
 2. Include either `bluejeans-ios-client-sdk` or `bluejeans-ios-client-sdk-simulator` in your target depending on whether you want to support physical devices or the simulator. We currently can not support both in one target using SPM, please follow the instructions for manual integration below if you require support for both in one target. 
 
 ### Manual
 Steps:
 
-1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.3.0/Frameworks.zip`
+1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.4.0/Frameworks.zip`
 2. Unzip the file and copy the `Frameworks` folder to the root folder where the Xcode project(*xxxx.xcodeproj* file) is located.
 3. Open the Xcode project, click on the project settings and select the *App target -> General Tab*.
 4. Scroll to ***Embedded Binaries*** section of Xcode target.
@@ -230,7 +232,7 @@ The Self and Content Share views can be added as follows:
 // Select the camera to use for the self view
 videoDeviceService.selectCameraDevice(.front)
 
-guard let videoView = videoDeviceService.getSelfViewInstance() else { return }
+let videoView = videoDeviceService.getSelfView() else { return }
 videoContainer.addSubview(videoView)
 //Set constraints programatically for top, bottom, left and right anchors
 videoView.translatesAutoresizingMaskIntoConstraints = false
@@ -240,11 +242,11 @@ videoView.topAnchor.constraint(equalTo: videoContainer.topAnchor).isActive = tru
 videoView.bottomAnchor.constraint(equalTo: videoContainer.bottomAnchor).isActive = true
 ```
 
-Similar code can be used with `getContentShareInstance` in place of `getSelfViewVideoInstance` to add it to your view hierarchy. Note that, as with the RemoteVideoViewController, the SDK does not retain a reference to these views.
+Similar code can be used with `getContentShareView` in place of `getSelfView` to add it to your view hierarchy. Note that, as with the RemoteVideoViewController, the SDK does not retain a reference to these views.
 
 ### Self Video View Rotation
 
-Note that the size/aspect ratio of the self-view will change as the device is rotated. Currently, this is between 3:4 (portrait) and 4:3 (landscape) but is likely to also include 9:16 and 16:9 in future releases.
+Note that the aspect ratio of the self-view will change as the device is rotated, or as the resolution changes. Possible aspect ratios are currently 3x4, 4x3, 9x16, 16x9. The video view will maintain the correct aspect ratio to fit, but you may wish to change the size of the container or make other UI adjustments when this changes. 
 
 To handle these changes (and many other properties), the SDK provides *observable properties* that allow you to react whenever they change. In this case, you need to observe the *VideoDeviceService.selfViewSize* property as follows:
 
@@ -259,7 +261,9 @@ videoDeviceService.selfViewSize.onChange {
 
 ### Content Share Size
 
-Content Share (Screen Share) from another device can come in many different sizes and aspect ratios. You should observe the `contentShareSize` property and recreate your aspect ratio constraints for the container view that holds the ContentShare instance.
+Content Share (Screen Share) from another device can come in many different sizes and aspect ratios. You should observe the `contentShareSize` property and make changes appropriately. 
+
+In order to enable full resolution of the content view, it should be embedded in a scroll view. The size can be set with the `contentShareSize` property. This will allow the view to be rendered at full resolution. The zoom factor can then be set to allow the view to fit on the screen. 
 
 ### Logging
 
@@ -355,6 +359,30 @@ The BlueJeans meeting platform supports automatically generated closed captionin
 
 The ClosedCaptioningService provides functions and properties to check if automatic captions are available for the current meeting, to start and stop the captions on the client, and the captions themselves. 
 
+## Color Customization
+The SDK supports limited customization of the colors in the video layouts. There are three colors the can be customized.
+
+- audioTileColor: The color of the background of audio only participants
+- containerColorOfAllTiles: The color of the background of the entire remote video container
+- videoTileBackgroundColor: The color of the background of video participants, whose video does not fill the entire view (eg. portrait videos)
+
+The colors can either be specified as a named color from the main asset bundle, or with a closure that configures a CAGradientLayer.
+The three colors are given in the CustomizationParams struct and should be set at initialization, they can be left nil to leave as the default colors. 
+
+```swift
+let gradientBackground: CustomBackground = .gradient { layer in
+    layer.colors = [ UIColor.blue.cgColor, UIColor.magenta.cgColor]
+    layer.type = .axial
+}
+
+let colorBackground: CustomBackground = .colorNamed("colorFromAssetBundle")
+
+let customizationParams = CustomizationParams(audioTileColor: gradientBackground, containerColorOfAllTiles: colorBackground, videoTileBackgroundColor: gradientBackground)
+
+let initParameters = BlueJeansSDKInitParams(customizationParams: customizationParams)
+BlueJeansSDK.initialize(bluejeansSDKInitParams: initParameters)
+```
+
 ## SDK Sample Applications
 
 We have bundled two sample apps in this repo.
@@ -405,7 +433,7 @@ Video/Audio capability of `BlueJeansSDK` would only work in an iOS Device since 
 - Content receive resolution and BW max: 1920x1080 at 5 fps, 300 kbps
 - Video send resolution and BW max: 640x480 at 30fps, 900 kbps
 
-Note: Endpoints that send video in an aspect ratio of 4:3 instead of 16:9, will result in the video received at a resolution of 640x480 in place of 640x360, 240x180 in place of 320x180, and 120x90 in place of 160x90. Mobile endpoints / BlueJeans iOS SDK endpoints send video at 640x480 i.e at an aspect ratio of 4:3.
+Note: Endpoints that send video in an aspect ratio of 4:3 instead of 16:9, will result in the video received at a resolution of 640x480 in place of 640x360, 240x180 in place of 320x180, and 120x90 in place of 160x90. Some mobile endpoints send video at 640x480 i.e at an aspect ratio of 4:3.
 
 ## Tracking & Analytics
 
@@ -429,10 +457,10 @@ Use of this SDK is subject to our [Terms & Conditions](https://www.bluejeans.com
 - Q. I set the video layout / mute state before joining a meeting but it changed after I joined the meeting without me calling any APIs?
 - A. Certain properties, such as the video layout should only be set after connecting to the meeting. While it is possible to set these while the meeting state is `.connecting` after the state becomes `.connected` the meeting owner's preferred layout will be pushed to all clients, overriding the changed selection. Similarly setting the `audioMuted` or `videoMuted` properties may be overridden by the "mute on entry" setting in some meetings.  
 
-- Q. The self/content share view is squashed/stretched?
-- A. Because the aspect ratio of the self view may change depending on the orientation or capture resolution, and the aspect ratio of the content share may change depending on the sharing device. You must observe the selfViewSize and contentShareSize properties and create constraints for the views appropriately. Example code to do this can be found in the HelloBlueJeans sample app. 
-
 - Q. Can I use Bitcode? 
 - A. No, the BlueJeans iOS Client SDK does not support Bitcode. 
+
+- Q. Why is the resolution of the content receive view so low? 
+- A. The content receive view can be embedded in a scroll view, with its size set to the contentReceiveSize property. This will allow the view to be rendered at full size giving the maximum resolution. You can then use the zoom factor to allow the view to fit your UI.
 
 

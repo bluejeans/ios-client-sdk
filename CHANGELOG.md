@@ -1,5 +1,15 @@
 Change Log
 ==========
+
+## Version 1.4.0
+---------------------------------
+### Added 
+- 720p 16x9 Capture Support (on supported devices)
+- `getSelfView()` and `getContentView()` methods that return a UIView that will automatically maintain the correct aspect ratio for it's video/content
+- Color customization of video layouts, allows setting the background colors/gradients of the remote video views
+### Deprecated
+- `getSelfViewInstance()` and `getContentReceiveInstance()` deprecated in favour of the above `getSelfView()` and `getContentView()` methods. Now return a non-optional UIView
+
 ## Version 1.3.0
 
 ### Added
