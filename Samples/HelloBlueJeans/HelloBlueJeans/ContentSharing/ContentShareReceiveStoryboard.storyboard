@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Content Share Receive View Controller-->
+        <scene sceneID="EqJ-Ux-eN3">
+            <objects>
+                <viewController storyboardIdentifier="Content Share Receive" id="WmB-v1-f0j" customClass="ContentShareReceiveViewController" customModule="HelloBlueJeans" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ep1-kq-N0E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Share Receive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY4-7G-wNX">
+                                <rect key="frame" x="20" y="64" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Render the shared collaboration view coming from the BlueJeans cloud." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxA-SZ-euD">
+                                <rect key="frame" x="20" y="118" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-Yg-obT">
+                                <rect key="frame" x="20" y="239.5" width="374" height="562.5"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch to zoom." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-uU-oOW">
+                                <rect key="frame" x="20" y="179" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tbA-c0-vMn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uY4-7G-wNX" firstAttribute="leading" secondItem="tbA-c0-vMn" secondAttribute="leading" constant="20" id="C8p-6W-HTF"/>
+                            <constraint firstItem="tbA-c0-vMn" firstAttribute="trailing" secondItem="1L9-Yg-obT" secondAttribute="trailing" constant="20" id="Chg-VT-JcQ"/>
+                            <constraint firstItem="tbA-c0-vMn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uY4-7G-wNX" secondAttribute="trailing" symbolic="YES" id="EdM-27-sSa"/>
+                            <constraint firstItem="eKu-uU-oOW" firstAttribute="top" secondItem="wxA-SZ-euD" secondAttribute="bottom" constant="20" id="F9Q-ib-Vth"/>
+                            <constraint firstItem="tbA-c0-vMn" firstAttribute="bottom" secondItem="1L9-Yg-obT" secondAttribute="bottom" constant="60" id="FAh-Ki-3uy"/>
+                            <constraint firstItem="1L9-Yg-obT" firstAttribute="top" secondItem="eKu-uU-oOW" secondAttribute="bottom" constant="40" id="IC4-FB-Hke"/>
+                            <constraint firstItem="wxA-SZ-euD" firstAttribute="top" secondItem="uY4-7G-wNX" secondAttribute="bottom" constant="20" id="TfH-sC-m2u"/>
+                            <constraint firstItem="tbA-c0-vMn" firstAttribute="trailing" secondItem="wxA-SZ-euD" secondAttribute="trailing" constant="20" id="WfG-G5-BR1"/>
+                            <constraint firstItem="wxA-SZ-euD" firstAttribute="leading" secondItem="uY4-7G-wNX" secondAttribute="leading" id="ZHX-fL-zPE"/>
+                            <constraint firstItem="1L9-Yg-obT" firstAttribute="leading" secondItem="tbA-c0-vMn" secondAttribute="leading" constant="20" id="cTL-Yn-yxw"/>
+                            <constraint firstItem="eKu-uU-oOW" firstAttribute="leading" secondItem="tbA-c0-vMn" secondAttribute="leading" constant="20" id="uY8-br-5T7"/>
+                            <constraint firstItem="tbA-c0-vMn" firstAttribute="trailing" secondItem="eKu-uU-oOW" secondAttribute="trailing" id="z88-zE-in1"/>
+                            <constraint firstItem="uY4-7G-wNX" firstAttribute="top" secondItem="tbA-c0-vMn" secondAttribute="top" constant="20" id="zK5-0G-DYn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentShareViewContainer" destination="1L9-Yg-obT" id="bhb-pX-wKY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xZ-dd-C7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

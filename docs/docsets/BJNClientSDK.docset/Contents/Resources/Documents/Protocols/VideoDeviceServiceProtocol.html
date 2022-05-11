@@ -270,6 +270,23 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Customization.html">Customization</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CustomizationParams.html">CustomizationParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CustomBackground.html">CustomBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Customization.html#/s:12BJNClientSDK22ConfigureGradientLayera">ConfigureGradientLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Defaults.html">Defaults</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -382,20 +399,53 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new UIView instance that renders the video coming from the device’s internal camera(s).</p>
+                        <p>Returns a new UIView instance that renders the video coming from the device’s internal camera(s).
+Note: <code><a href="../Protocols/VideoDeviceServiceProtocol.html#/s:12BJNClientSDK26VideoDeviceServiceProtocolP11getSelfViewSo6UIViewCyF">getSelfView()</a></code> is preferred over <code>getSelfViewInstance()</code> and will automatically maintain the correct aspect ratio.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getSelfViewInstance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, renamed: "getSelfView", message: "It has been replaced with 'getSelfView(﹚'. The UIView returned by `getSelfView(﹚` will automatically maintain the correct aspect ratio. Note: 'getSelfView(﹚' returns a non-optional UIView.")</span>
+<span class="kd">func</span> <span class="nf">getSelfViewInstance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>Returns a UIView or nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP11getSelfViewSo6UIViewCyF"></a>
+                    <a name="//apple_ref/swift/Method/getSelfView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP11getSelfViewSo6UIViewCyF">getSelfView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the UIView instance that renders video coming from the device&rsquo;s internal camera(s). The video within this UIView will maintain the correct aspect ratio as resolution or orientation changes with the video center-aligned and fit within the bounds of the view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getSelfView</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A UIView that contains the self-view video.</p>
                       </div>
                     </section>
                   </div>
@@ -413,20 +463,53 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new UIView instance that renders the shared collaboration view coming from the BlueJeans cloud.</p>
+                        <p>Returns a new UIView instance that renders the shared collaboration view coming from the BlueJeans cloud.
+Note: <code><a href="../Protocols/VideoDeviceServiceProtocol.html#/s:12BJNClientSDK26VideoDeviceServiceProtocolP19getContentShareViewSo6UIViewCyF">getContentShareView()</a></code> should be preferred over <code>getContentShareInstance()</code> and will automatically maintain the correct aspect ratio.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContentShareInstance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, renamed: "getContentShareView", message: "It has been replaced with 'getContentShareView(﹚'. The UIView returned by `getContentShareView(﹚` will automatically maintain the correct aspect ratio. Note: 'getContentShareView(﹚' returns a non-optional UIView.")</span>
+<span class="kd">func</span> <span class="nf">getContentShareInstance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>Returns a UIView or nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP19getContentShareViewSo6UIViewCyF"></a>
+                    <a name="//apple_ref/swift/Method/getContentShareView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP19getContentShareViewSo6UIViewCyF">getContentShareView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the UIView instance that renders the shared content view coming from the BlueJeans cloud. The content within this UIView will maintain the correct aspect ratio as resolution or orientation changes with the content center-aligned and fit within the bounds of the view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContentShareView</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A UIView containing the content of the meeting.</p>
                       </div>
                     </section>
                   </div>
@@ -591,6 +674,114 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentShareSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/BJNObservable.html">BJNObservable</a></span><span class="o">&lt;</span><span class="kt">CGSize</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP07set720pC14CaptureEnabledyySbF"></a>
+                    <a name="//apple_ref/swift/Method/set720pVideoCaptureEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP07set720pC14CaptureEnabledyySbF">set720pVideoCaptureEnabled(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">set720pVideoCaptureEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP06is720pC14CaptureEnabledAA13BJNObservableCySbGvp"></a>
+                    <a name="//apple_ref/swift/Property/is720pVideoCaptureEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP06is720pC14CaptureEnabledAA13BJNObservableCySbGvp">is720pVideoCaptureEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">is720pVideoCaptureEnabled</span><span class="p">:</span> <span class="kt"><a href="../Classes/BJNObservable.html">BJNObservable</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP07set720pC14ReceiveEnabledyySbF"></a>
+                    <a name="//apple_ref/swift/Method/set720pVideoReceiveEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP07set720pC14ReceiveEnabledyySbF">set720pVideoReceiveEnabled(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">set720pVideoReceiveEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26VideoDeviceServiceProtocolP06is720pC14ReceiveEnabledAA13BJNObservableCySbGvp"></a>
+                    <a name="//apple_ref/swift/Property/is720pVideoReceiveEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26VideoDeviceServiceProtocolP06is720pC14ReceiveEnabledAA13BJNObservableCySbGvp">is720pVideoReceiveEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">is720pVideoReceiveEnabled</span><span class="p">:</span> <span class="kt"><a href="../Classes/BJNObservable.html">BJNObservable</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
