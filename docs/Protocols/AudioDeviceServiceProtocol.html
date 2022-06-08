@@ -340,6 +340,36 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK26AudioDeviceServiceProtocolP18audioSessionActiveAA13BJNObservableCySbGvp"></a>
+                    <a name="//apple_ref/swift/Property/audioSessionActive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK26AudioDeviceServiceProtocolP18audioSessionActiveAA13BJNObservableCySbGvp">audioSessionActive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this observable to know when the audio session for the SDK is active.
+While the audio session is active you should use the <code>meetingService.playSoundFile</code> method to play other in-app sounds.
+The audio session will take some time to clean up after the call ends. Once this process is complete the value of this observable will be false.
+You can use this value to know when you may play a different audio source after the BlueJeans call has finished.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">audioSessionActive</span><span class="p">:</span> <span class="kt"><a href="../Classes/BJNObservable.html">BJNObservable</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>

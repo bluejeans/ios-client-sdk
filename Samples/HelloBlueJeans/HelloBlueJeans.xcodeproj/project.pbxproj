@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D508E27F29EAC002CD747 /* BJNSubscription.swift */; };
+		799B1D802820E438003DA696 /* VideoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1D7F2820E438003DA696 /* VideoLayoutViewController.swift */; };
+		799B1D822820E450003DA696 /* VideoLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799B1D812820E450003DA696 /* VideoLayoutStoryboard.storyboard */; };
 		79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */; };
 		79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */; };
 		79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */; };
@@ -112,6 +114,8 @@
 
 /* Begin PBXFileReference section */
 		794D508E27F29EAC002CD747 /* BJNSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJNSubscription.swift; sourceTree = "<group>"; };
+		799B1D7F2820E438003DA696 /* VideoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLayoutViewController.swift; sourceTree = "<group>"; };
+		799B1D812820E450003DA696 /* VideoLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoLayoutStoryboard.storyboard; sourceTree = "<group>"; };
 		79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogUploadStoryboard.storyboard; sourceTree = "<group>"; };
 		79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentShareReceiveStoryboard.storyboard; sourceTree = "<group>"; };
 		79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClosedCaptioningStoryboard.storyboard; sourceTree = "<group>"; };
@@ -190,6 +194,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		799B1D7E2820E413003DA696 /* VideoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				799B1D7F2820E438003DA696 /* VideoLayoutViewController.swift */,
+				799B1D812820E450003DA696 /* VideoLayoutStoryboard.storyboard */,
+			);
+			path = VideoLayout;
+			sourceTree = "<group>";
+		};
 		79E587CB27E00EB1008B6791 /* Meeting */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +261,7 @@
 		A1C4AF3B26E838FE006CE2C9 /* HelloBlueJeans */ = {
 			isa = PBXGroup;
 			children = (
+				799B1D7E2820E413003DA696 /* VideoLayout */,
 				79E587CF27E00F3A008B6791 /* ContentSharing */,
 				79E587CD27E00EFC008B6791 /* ClosedCaptioning */,
 				79E587CC27E00ED7008B6791 /* Logging */,
@@ -353,6 +367,7 @@
 			files = (
 				79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */,
 				A1C4AF9226E84912006CE2C9 /* README.md in Resources */,
+				799B1D822820E450003DA696 /* VideoLayoutStoryboard.storyboard in Resources */,
 				A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */,
 				79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */,
 				79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */,
@@ -376,6 +391,7 @@
 				A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */,
 				79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */,
 				794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */,
+				799B1D802820E438003DA696 /* VideoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
