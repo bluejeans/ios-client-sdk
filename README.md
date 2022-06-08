@@ -36,13 +36,12 @@ The design of the SDK emphasizes **simplicity**. Developers can quickly integrat
 - Active speaker (Who's talking)
 - "Recording has started, stopped, is on" audio notifications
 - Swift Package Manager Support
-
-### New in 1.4.0
 - 720p camera capture
 - Self and content views automatically update as the aspect ratio changes
 - Color customization of video layouts 
+- Support for Apple's [Combine](https://developer.apple.com/documentation/combine) framework (*new*)
 
-## Current Version: 1.4.0
+## Current Version: 1.5.0
 
 ## Pre-requisites
 
@@ -79,13 +78,13 @@ Integrate the SDK using the below guidelines and use SDK APIs to join a meeting 
 ## Integration Steps
 
 ### Swift Package Manager
-1. Add the URL `https://github.com/bluejeans/ios-client-sdk` using Swift Package Manager in Xcode, the SDK supports Swift Package Manager from version `1.4.0`
+1. Add the URL `https://github.com/bluejeans/ios-client-sdk` using Swift Package Manager in Xcode.
 2. Include either `bluejeans-ios-client-sdk` or `bluejeans-ios-client-sdk-simulator` in your target depending on whether you want to support physical devices or the simulator. We currently can not support both in one target using SPM, please follow the instructions for manual integration below if you require support for both in one target. 
 
 ### Manual
 Steps:
 
-1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.4.0/Frameworks.zip`
+1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.5.0/Frameworks.zip`
 2. Unzip the file and copy the `Frameworks` folder to the root folder where the Xcode project(*xxxx.xcodeproj* file) is located.
 3. Open the Xcode project, click on the project settings and select the *App target -> General Tab*.
 4. Scroll to ***Embedded Binaries*** section of Xcode target.
@@ -459,8 +458,3 @@ Use of this SDK is subject to our [Terms & Conditions](https://www.bluejeans.com
 
 - Q. Can I use Bitcode? 
 - A. No, the BlueJeans iOS Client SDK does not support Bitcode. 
-
-- Q. Why is the resolution of the content receive view so low? 
-- A. The content receive view can be embedded in a scroll view, with its size set to the contentReceiveSize property. This will allow the view to be rendered at full size giving the maximum resolution. You can then use the zoom factor to allow the view to fit your UI.
-
-

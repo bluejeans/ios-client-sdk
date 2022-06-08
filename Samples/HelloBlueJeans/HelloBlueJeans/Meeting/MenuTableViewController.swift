@@ -47,6 +47,7 @@ class MenuTableViewController: UITableViewController {
         case logUpload
         case closedCaptioning
         case contentShareReceive
+        case videoLayout
         
         var name: String {
             switch self {
@@ -56,6 +57,8 @@ class MenuTableViewController: UITableViewController {
                 return "Closed Captioning"
             case .contentShareReceive:
                return "Content Share Receive"
+            case .videoLayout:
+                return "Video Layout"
             }
         }
         
@@ -67,6 +70,8 @@ class MenuTableViewController: UITableViewController {
                 return UIImage(systemName: "captions.bubble")!
             case .contentShareReceive:
                 return UIImage(systemName: "arrowtriangle.right.square")!
+            case .videoLayout:
+                return UIImage(systemName: "rectangle.3.offgrid")!
             }
         }
         
@@ -78,6 +83,8 @@ class MenuTableViewController: UITableViewController {
                 return UIStoryboard(name: "ClosedCaptioningStoryboard", bundle: nil)
             case .contentShareReceive:
                 return UIStoryboard(name: "ContentShareReceiveStoryboard", bundle: nil)
+            case .videoLayout:
+                return UIStoryboard(name: "VideoLayoutStoryboard", bundle: nil)
             }
         }
     }

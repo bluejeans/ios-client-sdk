@@ -329,15 +329,12 @@
 <li>Active speaker (Who&rsquo;s talking)</li>
 <li>&ldquo;Recording has started, stopped, is on&rdquo; audio notifications</li>
 <li>Swift Package Manager Support</li>
-</ul>
-<h3 id='new-in-1-4-0' class='heading'>New in 1.4.0</h3>
-
-<ul>
 <li>720p camera capture</li>
 <li>Self and content views automatically update as the aspect ratio changes</li>
 <li>Color customization of video layouts</li>
+<li>Support for Apple&rsquo;s <a href="https://developer.apple.com/documentation/combine">Combine</a> framework (<em>new</em>)</li>
 </ul>
-<h2 id='current-version-1-4-0' class='heading'>Current Version: 1.4.0</h2>
+<h2 id='current-version-1-5-0' class='heading'>Current Version: 1.5.0</h2>
 <h2 id='pre-requisites' class='heading'>Pre-requisites</h2>
 
 <p>This framework requires <em>**Swift 5.4 or later</em>* and <strong><em>Xcode 12.5 or above</em></strong>.</p>
@@ -370,7 +367,7 @@
 <h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
 <ol>
-<li>Add the URL <code>https://github.com/bluejeans/ios-client-sdk</code> using Swift Package Manager in Xcode, the SDK supports Swift Package Manager from version <code>1.3.0</code></li>
+<li>Add the URL <code>https://github.com/bluejeans/ios-client-sdk</code> using Swift Package Manager in Xcode.</li>
 <li>Include either <code>bluejeans-ios-client-sdk</code> or <code>bluejeans-ios-client-sdk-simulator</code> in your target depending on whether you want to support physical devices or the simulator. We currently can not support both in one target using SPM, please follow the instructions for manual integration below if you require support for both in one target.</li>
 </ol>
 <h3 id='manual' class='heading'>Manual</h3>
@@ -378,7 +375,7 @@
 <p>Steps:</p>
 
 <ol>
-<li>Download the xcframeworks from here: <code>https://swdl.bluejeans.com/bjnvideosdk/ios/1.3.0/Frameworks.zip</code></li>
+<li>Download the xcframeworks from here: <code>https://swdl.bluejeans.com/bjnvideosdk/ios/1.5.0/Frameworks.zip</code></li>
 <li>Unzip the file and copy the <code>Frameworks</code> folder to the root folder where the Xcode project(<em>xxxx.xcodeproj</em> file) is located.</li>
 <li>Open the Xcode project, click on the project settings and select the <em>App target -&gt; General Tab</em>.</li>
 <li>Scroll to <strong><em>Embedded Binaries</em></strong> section of Xcode target.</li>
@@ -777,8 +774,6 @@ Download the agreement and send an email to <a href="mailto:api-sdk@bluejeans.co
 <li><p>A. Certain properties, such as the video layout should only be set after connecting to the meeting. While it is possible to set these while the meeting state is <code>.connecting</code> after the state becomes <code>.connected</code> the meeting owner&rsquo;s preferred layout will be pushed to all clients, overriding the changed selection. Similarly setting the <code>audioMuted</code> or <code>videoMuted</code> properties may be overridden by the &ldquo;mute on entry&rdquo; setting in some meetings.  </p></li>
 <li><p>Q. Can I use Bitcode? </p></li>
 <li><p>A. No, the BlueJeans iOS Client SDK does not support Bitcode. </p></li>
-<li><p>Q. Why is the resolution of the content receive view so low? </p></li>
-<li><p>A. The content receive view can be embedded in a scroll view, with its size set to the contentReceiveSize property. This will allow the view to be rendered at full size giving the maximum resolution. You can then use the zoom factor to allow the view to fit your UI.</p></li>
 </ul>
 
           </div>

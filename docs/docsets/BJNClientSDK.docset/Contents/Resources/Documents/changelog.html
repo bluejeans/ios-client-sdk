@@ -294,6 +294,24 @@
           <div class="section-content">
             
             <h1 id='change-log' class='heading'>Change Log</h1>
+<h2 id='version-1-5-0' class='heading'>Version 1.5.0</h2>
+
+<hr>
+<h3 id='added' class='heading'>Added</h3>
+
+<ul>
+<li>meetingService.contentMuted - reflects the enablement of the content stream</li>
+<li>meetingService.remoteAudioMuted - reflects the enablement of remote audio streams</li>
+<li><p>meetingService.remoteVideoMuted - reflects the enablement of remote video streams</p></li>
+<li><p>audioDeviceService.audioSessionActive - tracks if the AVAudioSession is managed by the SDK. If active, other in-app sounds should be played through the supplied SDK methods. This value can also be observed to know when the SDK audio session is completely cleaned up after leaving a meeting.</p></li>
+<li><p>BJNObservable.publisher - a Combine framework publisher that publishes the initial value, then a new value on every change of the observable. </p></li>
+</ul>
+<h3 id='fixed' class='heading'>Fixed</h3>
+
+<ul>
+<li>Fixes bug where SDK endpoint would appear unmuted when user did not grant camera or microphone permissions. Adds <code>permissionGranted</code> property to <code><a href="Structs/MuteState.html">MuteState</a></code>.</li>
+<li>Fixes an issue where the screen share content received is pixelated/blurry.</li>
+</ul>
 <h2 id='version-1-4-0' class='heading'>Version 1.4.0</h2>
 
 <hr>
@@ -307,6 +325,8 @@
 <li><code>getSelfViewInstance()</code> and <code>getContentReceiveInstance()</code> deprecated in favour of the above <code>getSelfView()</code> and <code>getContentView()</code> methods. Now return a non-optional UIView</li>
 </ul>
 <h2 id='version-1-3-0' class='heading'>Version 1.3.0</h2>
+
+<hr>
 <h3 id='added' class='heading'>Added</h3>
 
 <ul>

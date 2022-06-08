@@ -1,6 +1,20 @@
 Change Log
 ==========
 
+## Version 1.5.0
+---------------------------------
+### Added
+- meetingService.contentMuted - reflects the enablement of the content stream
+- meetingService.remoteAudioMuted - reflects the enablement of remote audio streams
+- meetingService.remoteVideoMuted - reflects the enablement of remote video streams
+
+- audioDeviceService.audioSessionActive - tracks if the AVAudioSession is managed by the SDK. If active, other in-app sounds should be played through the supplied SDK methods. This value can also be observed to know when the SDK audio session is completely cleaned up after leaving a meeting.
+- BJNObservable.publisher - a Combine framework publisher that publishes the initial value, then a new value on every change of the observable. 
+
+### Fixed
+- Fixes bug where SDK endpoint would appear unmuted when user did not grant camera or microphone permissions. Adds `permissionGranted` property to `MuteState`. 
+- Fixes an issue where the screen share content received is pixelated/blurry. 
+
 ## Version 1.4.0
 ---------------------------------
 ### Added 
@@ -11,7 +25,7 @@ Change Log
 - `getSelfViewInstance()` and `getContentReceiveInstance()` deprecated in favour of the above `getSelfView()` and `getContentView()` methods. Now return a non-optional UIView
 
 ## Version 1.3.0
-
+---------------------------------
 ### Added
 - Swift Package Manager Support
 - Module Stability

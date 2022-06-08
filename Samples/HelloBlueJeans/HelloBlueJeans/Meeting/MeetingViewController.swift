@@ -37,18 +37,29 @@ class MeetingViewController: UIViewController {
     var selfViewAspectRatioConstraint: NSLayoutConstraint?
     
     var subscriptions = [BJNSubscription]()
+    
+    var remoteVideoViewController: UIViewController!
 
     // MARK: Initialisation
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSDK()
-        setupRemoteVideoView()
         setupSelfView()
         setupMeetingUI()
         setupAudioMuteUI()
         setupVideoMuteUI()
         setupActiveSpeakerUI()
+    }
+    
+     override func viewDidAppear(_ animated: Bool) {
+       setupRemoteVideoView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        remoteVideoViewController.view.removeFromSuperview()
+        remoteVideoViewController.removeFromParent()
+        remoteVideoViewController.didMove(toParent: self)
     }
 
     /// Setting up the SDK is as simple as assigning the services.
@@ -66,11 +77,11 @@ class MeetingViewController: UIViewController {
     /// The remote video controller handles the layout and organisation of all the locally composited views for all the participant video streams in the meeting.
     /// We add it to our view controller using VC containment.
     func setupRemoteVideoView() {
-        let remoteVideoViewController = videoDeviceService.getRemoteVideoController()
-        addChild(remoteVideoViewController)
-        view.addSubview(remoteVideoViewController.view)
-        view.sendSubviewToBack(remoteVideoViewController.view)
-        remoteVideoViewController.didMove(toParent: self)
+            remoteVideoViewController = videoDeviceService.getRemoteVideoController()
+            addChild(remoteVideoViewController)
+            view.addSubview(remoteVideoViewController.view)
+            view.sendSubviewToBack(remoteVideoViewController.view)
+            remoteVideoViewController.didMove(toParent: self)
     }
 
     // MARK: Self View
