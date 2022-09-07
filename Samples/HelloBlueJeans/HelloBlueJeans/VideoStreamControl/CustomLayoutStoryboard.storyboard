@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Layout View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Custom Layout" id="Y6W-OH-hqX" customClass="CustomLayoutViewController" customModule="HelloBlueJeans" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-EP-x7I">
+                                <rect key="frame" x="8" y="92" width="398" height="652"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QMt-H3-jti" appends="YES" id="lvn-vk-cke"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-ot-uFb">
+                                <rect key="frame" x="147" y="54" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BMH-mw-cCN"/>
+                                    <constraint firstAttribute="width" constant="120" id="F1M-Xr-1Hh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V8O-kG-gVw">
+                                <rect key="frame" x="20" y="752" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-9g-0vc">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="720p"/>
+                                        <connections>
+                                            <action selector="tapped720p" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VNh-4k-xXb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2m-Ef-Tj7">
+                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="360p"/>
+                                        <connections>
+                                            <action selector="tapped360p" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YfO-o1-1DW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Of-1u-T38">
+                                        <rect key="frame" x="187" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="180p"/>
+                                        <connections>
+                                            <action selector="tapped180p" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aoc-sp-L7r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVq-VU-Dp6">
+                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="90p"/>
+                                        <connections>
+                                            <action selector="tapped90p" destination="Y6W-OH-hqX" eventType="touchUpInside" id="A6x-2D-KyT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZhZ-BY-BLb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="BU4-EP-x7I" firstAttribute="top" secondItem="7kV-ot-uFb" secondAttribute="bottom" constant="8" id="3Rd-ad-5wc"/>
+                            <constraint firstItem="7kV-ot-uFb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7DH-n5-WJS"/>
+                            <constraint firstItem="7kV-ot-uFb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="8df-i6-ocp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="V8O-kG-gVw" secondAttribute="bottom" constant="60" id="Dse-KH-1li"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V8O-kG-gVw" secondAttribute="trailing" constant="20" id="aFJ-YM-60F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BU4-EP-x7I" secondAttribute="trailing" constant="8" id="lel-CH-Chl"/>
+                            <constraint firstItem="V8O-kG-gVw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pcR-zj-PSq"/>
+                            <constraint firstItem="V8O-kG-gVw" firstAttribute="top" secondItem="BU4-EP-x7I" secondAttribute="bottom" constant="8" id="ubG-m3-Xgs"/>
+                            <constraint firstItem="BU4-EP-x7I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="zw3-Dv-mFd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resolutionLabel" destination="7kV-ot-uFb" id="U1j-rm-omD"/>
+                        <outlet property="videoContainer" destination="BU4-EP-x7I" id="X96-Ff-N5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="QMt-H3-jti">
+                    <connections>
+                        <action selector="videoDoubleTapped:" destination="Y6W-OH-hqX" id="NiS-xu-Mgr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

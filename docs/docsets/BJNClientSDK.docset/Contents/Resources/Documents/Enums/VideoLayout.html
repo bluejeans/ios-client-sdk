@@ -226,6 +226,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BJNParticipant.html">BJNParticipant</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CallQuality.html">CallQuality</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -250,6 +253,59 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ClosedCaptioningServiceProtocol.html">ClosedCaptioningServiceProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../VideoStreamService.html">VideoStreamService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/VideoStreamServiceProtocol.html">VideoStreamServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VideoStreamConfiguration.html">VideoStreamConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/VideoStreamConfigurationResult.html">VideoStreamConfigurationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/VideoStreamConfigurationResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AttachParticipantStreamResult.html">AttachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AttachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DetachParticipantStreamResult.html">DetachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DetachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StreamQuality.html">StreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StreamPriority.html">StreamPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Resolution.html">Resolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FPS.html">FPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AttachedView.html">AttachedView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/VideoStreamProtocol.html">VideoStreamProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VideoStream.html">VideoStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VideoStreamMetadata.html">VideoStreamMetadata</a>
               </li>
             </ul>
           </li>
@@ -296,12 +352,13 @@
             <h1>VideoLayout</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">VideoLayout</span> <span class="p">:</span> <span class="kt">NSInteger</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">VideoLayout</span> <span class="p">:</span> <span class="kt">NSInteger</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
-            <p>Represents how each of the remote participant&rsquo;s videos are composited into the single video stream received by the client.</p>
+            <p>Represents how the remote participant&rsquo;s videos are displayed when received by the client.
+Used by <code><a href="../Protocols/MeetingServiceProtocol.html#/s:12BJNClientSDK22MeetingServiceProtocolP14setVideoLayout2toyAA0gH0O_tF">setVideoLayout(to:)</a></code>
+Current value is available from <code><a href="../Protocols/MeetingServiceProtocol.html#/s:12BJNClientSDK22MeetingServiceProtocolP11videoLayoutAA13BJNObservableCyAA05VideoG0OSgGvp">videoLayout</a></code> observable.</p>
 
           </div>
         </section>
@@ -313,9 +370,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutSpeaker"></a>
+                    <a name="/s:12BJNClientSDK11VideoLayoutO7speakeryA2CmF"></a>
                     <a name="//apple_ref/swift/Element/speaker" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutSpeaker">speaker</a>
+                    <a class="token" href="#/s:12BJNClientSDK11VideoLayoutO7speakeryA2CmF">speaker</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -340,9 +397,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutPeople"></a>
+                    <a name="/s:12BJNClientSDK11VideoLayoutO6peopleyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/people" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutPeople">people</a>
+                    <a class="token" href="#/s:12BJNClientSDK11VideoLayoutO6peopleyA2CmF">people</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -367,9 +424,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutGallery"></a>
+                    <a name="/s:12BJNClientSDK11VideoLayoutO7galleryyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/gallery" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@BJNClientSDK@E@VideoLayout@VideoLayoutGallery">gallery</a>
+                    <a class="token" href="#/s:12BJNClientSDK11VideoLayoutO7galleryyA2CmF">gallery</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -377,7 +434,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Up to the 9 most recent speakers are shown, arranged in a grid layout of equal sizes.</p>
+                        <p>Up to the 9 (or 25 if <code><a href="../Structs/BlueJeansSDKInitParams.html#/s:12BJNClientSDK22BlueJeansSDKInitParamsV25is5x5GalleryLayoutEnabledSbSgvp">is5x5GalleryLayoutEnabled</a></code> is true)
+most recent speakers are shown, arranged in a grid layout of equal sizes.</p>
 
                       </div>
                       <div class="declaration">
@@ -385,6 +443,35 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">case</span> <span class="n">gallery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK11VideoLayoutO6customyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/custom" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK11VideoLayoutO6customyA2CmF">custom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure a custom layout manually and ignore the meeting layout.
+Uses the <code><a href="../Protocols/VideoStreamServiceProtocol.html">VideoStreamServiceProtocol</a></code> to request and render video streams.
+May be set before joining a meeting (other layouts can only be set during a meeting).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">custom</span></code></pre>
 
                         </div>
                       </div>

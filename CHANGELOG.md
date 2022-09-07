@@ -1,5 +1,42 @@
 Change Log
 ==========
+## Version 1.6.0
+---------------------------------
+
+### 🚨 ***Breaking Changes*** 
+- meetingService.audioMuted type changed from Bool? -> Bool
+- meetingService.videoMuted type changed from Bool? -> Bool
+- meetingService.audioMuteState type changed from MuteState? -> MuteState
+- meetingService.videoMuteState type changed from MuteState? -> MuteState
+
+meetingService.setAudioMuted, and meetingService.setVideoMuted may now be set prior to joining a meeting,
+or while in the waiting room. Any updates to the localMuted state will retained while the SDK is in memory.
+
+- Added `.custom` case to the `VideoLayout` enumeration
+
+This will only ever be set locally and can be ignored if not using custom layout controls.
+
+### New License
+See the updated LICENSE.txt
+
+### Added
+#### Individual Stream Control
+- Create custom layouts and request specific streams of video using the `VideoStreamService`
+- Set the VideoLayout to `.custom`
+- Request streams of video with the `setVideoStreamConfiguration` 
+- Observe active streams of video with the `videoStreams` array
+- Render videos in your own custom sized views with `attachParticipantStreamToView`
+- See the `VideoStreamService` for all additions
+
+#### ParticipantsService Additions
+- participantsService.getParticipantWithId(id: String) -> BJNParticipant?
+- BJNParticipant.isActiveSpeaker
+- BJNParticipant.profilePictureURL
+- BJNParticipant.callQuality
+- BJNParticipant.hasVideoConnection 
+
+### Fixed
+- Fixes issue where the content view was not visible in some cases
 
 ## Version 1.5.0
 ---------------------------------

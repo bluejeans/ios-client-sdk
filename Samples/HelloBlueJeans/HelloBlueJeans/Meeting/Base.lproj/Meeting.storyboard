@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OYy-jI-RyD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OYy-jI-RyD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,39 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3M-qL-ENb">
-                                <rect key="frame" x="57" y="718" width="300" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I3M-qL-ENb">
+                                <rect key="frame" x="57" y="733" width="300" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUc-S1-yl6">
-                                        <rect key="frame" x="0.0" y="1.5" width="75" height="72.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="7hv-af-YO4"/>
-                                            <constraint firstAttribute="width" secondItem="AUc-S1-yl6" secondAttribute="height" multiplier="1:1" id="Lti-y0-O0i"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="1.5" width="75" height="57.5"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="phone.fill" catalog="system"/>
                                         <connections>
                                             <action selector="join" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJT-os-cLv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-Sb-x2s">
-                                        <rect key="frame" x="75" y="2.5" width="75" height="70.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="Bzz-dj-ERl"/>
-                                            <constraint firstAttribute="width" secondItem="ByT-Sb-x2s" secondAttribute="height" multiplier="1:1" id="dyC-rF-iqU"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-Sb-x2s">
+                                        <rect key="frame" x="75" y="2.5" width="75" height="55.5"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" backgroundImage="video.fill" catalog="system"/>
                                         <connections>
                                             <action selector="muteVideoToggle" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEo-Ef-L9k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dps-Y3-ygI">
-                                        <rect key="frame" x="150" y="-0.5" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Dps-Y3-ygI" secondAttribute="height" multiplier="1:1" id="Ed3-vi-6P3"/>
-                                            <constraint firstAttribute="height" constant="75" id="lUs-rt-qbV"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dps-Y3-ygI">
+                                        <rect key="frame" x="150" y="-0.5" width="75" height="60"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" backgroundImage="mic.fill" catalog="system"/>
                                         <connections>
@@ -57,11 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-Ha-48E">
-                                        <rect key="frame" x="225" y="5.5" width="75" height="64.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="H8S-hm-tQO"/>
-                                            <constraint firstAttribute="width" secondItem="RKo-Ha-48E" secondAttribute="height" multiplier="1:1" id="abd-2f-zsA"/>
-                                        </constraints>
+                                        <rect key="frame" x="225" y="5.5" width="75" height="49.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="phone.down.fill" catalog="system"/>
                                         <connections>
@@ -70,9 +54,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Dps-Y3-ygI" firstAttribute="width" secondItem="Dps-Y3-ygI" secondAttribute="height" multiplier="1:1" id="0ZV-lf-6rn"/>
-                                    <constraint firstItem="ByT-Sb-x2s" firstAttribute="width" secondItem="ByT-Sb-x2s" secondAttribute="height" multiplier="1:1" id="vrs-F4-gai"/>
-                                    <constraint firstItem="ByT-Sb-x2s" firstAttribute="width" secondItem="ByT-Sb-x2s" secondAttribute="height" multiplier="1:1" id="yfj-MF-Fko"/>
+                                    <constraint firstAttribute="height" constant="60" id="bft-S0-O1r"/>
+                                    <constraint firstAttribute="width" constant="300" id="yb7-Hk-Zix"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTv-5i-0ag">
@@ -153,7 +136,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeatureCell" textLabel="j8C-m4-5U7" style="IBUITableViewCellStyleDefault" id="Pq1-Mc-0u0">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="52.5"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="52.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pq1-Mc-0u0" id="WuH-5e-Hqp">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
@@ -229,12 +212,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="mic.fill" catalog="system" width="108" height="128"/>
-        <image name="person.2" catalog="system" width="128" height="81"/>
-        <image name="phone.down.fill" catalog="system" width="128" height="52"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="mic.fill" catalog="system" width="110" height="128"/>
+        <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="phone.down.fill" catalog="system" width="128" height="55"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
-        <image name="video.fill" catalog="system" width="128" height="82"/>
+        <image name="video.fill" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

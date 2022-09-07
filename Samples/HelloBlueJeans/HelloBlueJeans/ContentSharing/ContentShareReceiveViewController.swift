@@ -71,4 +71,3 @@ extension ContentShareReceiveViewController: UIScrollViewDelegate {
         scrollView.contentInset = UIEdgeInsets(top: offsetY, left: offsetX, bottom: 0, right: 0)
     }
 }
-

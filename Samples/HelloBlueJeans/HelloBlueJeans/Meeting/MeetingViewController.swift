@@ -39,6 +39,8 @@ class MeetingViewController: UIViewController {
     var subscriptions = [BJNSubscription]()
     
     var remoteVideoViewController: UIViewController!
+    
+    var selfView: UIView?
 
     // MARK: Initialisation
 
@@ -46,6 +48,7 @@ class MeetingViewController: UIViewController {
         super.viewDidLoad()
         setupSDK()
         setupSelfView()
+        setupSelfViewCover()
         setupMeetingUI()
         setupAudioMuteUI()
         setupVideoMuteUI()
@@ -102,7 +105,20 @@ class MeetingViewController: UIViewController {
        selfView.rightAnchor.constraint(equalTo: selfViewContainer.rightAnchor).isActive = true
        selfView.topAnchor.constraint(equalTo: selfViewContainer.topAnchor).isActive = true
        selfView.bottomAnchor.constraint(equalTo: selfViewContainer.bottomAnchor).isActive = true
+       
+       self.selfView = selfView
    }
+    
+    /// This method sets up a view to cover the self view when capture is not active, to avoid showing the last captured frame
+    func setupSelfViewCover() {
+        videoDeviceService.captureIsActive.keepUpToDate { [ weak self] in
+            if let isSelfViewVisible = self?.videoDeviceService.captureIsActive.value {
+                DispatchQueue.main.async { [ weak self ] in
+                    self?.selfViewCoverImage.isHidden = isSelfViewVisible
+                }
+            }
+        }.store(in: &subscriptions)
+    }
 
     // MARK: Meeting Join / Leave
 
@@ -176,10 +192,10 @@ class MeetingViewController: UIViewController {
             break
         }
 
-        DispatchQueue.main.async {
-            self.titleBarLabel.text = title
-            self.joinButton.isEnabled = joinButtonEnabled
-            self.leaveButton.isEnabled = leaveButtonEnabled
+        DispatchQueue.main.async { [ weak self ] in
+            self?.titleBarLabel.text = title
+            self?.joinButton.isEnabled = joinButtonEnabled
+            self?.leaveButton.isEnabled = leaveButtonEnabled
         }
         
     }
@@ -188,7 +204,7 @@ class MeetingViewController: UIViewController {
 
     /// To set audio mute we simply call the setAudioMute() method of the meeting service.
     @IBAction func muteAudioToggle() {
-        guard let isAudioMuted = meetingService.audioMuted.value else { return }
+        let isAudioMuted = meetingService.audioMuted.value
         meetingService.setAudioMuted(to: !isAudioMuted)
     }
 
@@ -201,20 +217,11 @@ class MeetingViewController: UIViewController {
     /// This method updates the UI to reflect the value of audioMuteState.
     /// It gets executed every time the audioMuted property changes as defined in the setupAudioMuteUI() method.
     func updateAudioMuteUI() {
-        let muteAudioButtonEnabled: Bool
-        let audioMutedBackgroundImage: UIImage
-
-        if let audioMuted = meetingService.audioMuted.value {
-            audioMutedBackgroundImage = UIImage(systemName: audioMuted ? "mic.slash.fill" : "mic.fill")!
-            muteAudioButtonEnabled = true
-        } else {
-            audioMutedBackgroundImage = UIImage(systemName: "mic.slash.fill")!
-            muteAudioButtonEnabled = false
-        }
+        let audioMuted = meetingService.audioMuted.value
+        let audioMutedBackgroundImage = UIImage(systemName: audioMuted ? "mic.slash.fill" : "mic.fill")!
         
-        DispatchQueue.main.async {
-            self.muteAudioButton.isEnabled = muteAudioButtonEnabled
-            self.muteAudioButton.setBackgroundImage(audioMutedBackgroundImage, for: .normal)
+        DispatchQueue.main.async { [ weak self ] in
+            self?.muteAudioButton.setBackgroundImage(audioMutedBackgroundImage, for: .normal)
         }
     }
 
@@ -222,7 +229,7 @@ class MeetingViewController: UIViewController {
 
     /// To set video mute we simply call the setAudioMute() method of the meeting service.
     @IBAction func muteVideoToggle() {
-        guard let isVideoMuted = meetingService.videoMuted.value else { return }
+        let isVideoMuted = meetingService.videoMuted.value
         meetingService.setVideoMuted(to: !isVideoMuted)
     }
 
@@ -235,24 +242,11 @@ class MeetingViewController: UIViewController {
     /// This method updates the UI to reflect the value of videoMuteState.
     /// It gets executed every time the videoMuted property changes as defined in the setupVideoMuteUI() method.
     func updateVideoMuteUI() {
-        let muteVideoButtonEnabled: Bool
-        let videoMutedBackgroundImage: UIImage
-        let selfViewHidden: Bool
+        let videoMuted = meetingService.videoMuted.value
+        let videoMutedBackgroundImage = UIImage(systemName: videoMuted ? "video.slash.fill" : "video.fill")!
 
-        if let videoMuted = meetingService.videoMuted.value {
-            videoMutedBackgroundImage = UIImage(systemName: videoMuted ? "video.slash.fill" : "video.fill")!
-            muteVideoButtonEnabled = true
-            selfViewHidden = !videoMuted
-        } else {
-            videoMutedBackgroundImage = UIImage(systemName: "video.slash.fill")!
-            selfViewHidden = false
-            muteVideoButtonEnabled = false
-        }
-
-        DispatchQueue.main.async {
-            self.muteVideoButton.isEnabled = muteVideoButtonEnabled
-            self.muteVideoButton.setBackgroundImage(videoMutedBackgroundImage, for: .normal)
-            self.selfViewCoverImage.isHidden = selfViewHidden
+        DispatchQueue.main.async { [ weak self ] in
+            self?.muteVideoButton.setBackgroundImage(videoMutedBackgroundImage, for: .normal)
         }
     }
 
@@ -278,9 +272,9 @@ class MeetingViewController: UIViewController {
             activeSpeakerHidden = true
         }
 
-        DispatchQueue.main.async {
-            self.activeSpeakerLabel.text = activeSpeakerText
-            self.activeSpeakerLabel.isHidden = activeSpeakerHidden
+        DispatchQueue.main.async { [ weak self ] in
+            self?.activeSpeakerLabel.text = activeSpeakerText
+            self?.activeSpeakerLabel.isHidden = activeSpeakerHidden
         }
     }
 }
