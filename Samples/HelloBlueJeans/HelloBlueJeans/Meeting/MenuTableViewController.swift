@@ -25,7 +25,6 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeatureCell", for: indexPath)
 
-        
         let menuItem = Feature.allCases[indexPath.row]
         cell.textLabel?.text = menuItem.name
         cell.imageView?.image = menuItem.image
@@ -48,6 +47,8 @@ class MenuTableViewController: UITableViewController {
         case closedCaptioning
         case contentShareReceive
         case videoLayout
+        case customLayout
+        case advancedCustomLayout
         
         var name: String {
             switch self {
@@ -59,6 +60,10 @@ class MenuTableViewController: UITableViewController {
                return "Content Share Receive"
             case .videoLayout:
                 return "Video Layout"
+            case .customLayout:
+                return "Custom Layout"
+            case .advancedCustomLayout:
+                return "Advanced Custom Layout"
             }
         }
         
@@ -72,6 +77,10 @@ class MenuTableViewController: UITableViewController {
                 return UIImage(systemName: "arrowtriangle.right.square")!
             case .videoLayout:
                 return UIImage(systemName: "rectangle.3.offgrid")!
+            case .customLayout:
+                return UIImage(systemName: "rectangle.dashed")!
+            case .advancedCustomLayout:
+                return UIImage(systemName: "rectangle.grid.3x2")!
             }
         }
         
@@ -85,6 +94,10 @@ class MenuTableViewController: UITableViewController {
                 return UIStoryboard(name: "ContentShareReceiveStoryboard", bundle: nil)
             case .videoLayout:
                 return UIStoryboard(name: "VideoLayoutStoryboard", bundle: nil)
+            case .customLayout:
+                return UIStoryboard(name: "CustomLayoutStoryboard", bundle: nil)
+            case .advancedCustomLayout:
+                return UIStoryboard(name: "AdvancedCustomLayoutStoryboard", bundle: nil)
             }
         }
     }

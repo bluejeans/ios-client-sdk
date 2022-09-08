@@ -226,6 +226,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/BJNParticipant.html">BJNParticipant</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CallQuality.html">CallQuality</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -250,6 +253,59 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ClosedCaptioningServiceProtocol.html">ClosedCaptioningServiceProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="VideoStreamService.html">VideoStreamService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/VideoStreamServiceProtocol.html">VideoStreamServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStreamConfiguration.html">VideoStreamConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/VideoStreamConfigurationResult.html">VideoStreamConfigurationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/VideoStreamConfigurationResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AttachParticipantStreamResult.html">AttachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AttachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DetachParticipantStreamResult.html">DetachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DetachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StreamQuality.html">StreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StreamPriority.html">StreamPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Resolution.html">Resolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FPS.html">FPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AttachedView.html">AttachedView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/VideoStreamProtocol.html">VideoStreamProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStream.html">VideoStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStreamMetadata.html">VideoStreamMetadata</a>
               </li>
             </ul>
           </li>
@@ -445,9 +501,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@BJNClientSDK@E@VideoLayout"></a>
+                    <a name="/s:12BJNClientSDK11VideoLayoutO"></a>
                     <a name="//apple_ref/swift/Enum/VideoLayout" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@BJNClientSDK@E@VideoLayout">VideoLayout</a>
+                    <a class="token" href="#/s:12BJNClientSDK11VideoLayoutO">VideoLayout</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -455,7 +511,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents how each of the remote participant&rsquo;s videos are composited into the single video stream received by the client.</p>
+                        <p>Represents how the remote participant&rsquo;s videos are displayed when received by the client.
+Used by <code><a href="Protocols/MeetingServiceProtocol.html#/s:12BJNClientSDK22MeetingServiceProtocolP14setVideoLayout2toyAA0gH0O_tF">setVideoLayout(to:)</a></code>
+Current value is available from <code><a href="Protocols/MeetingServiceProtocol.html#/s:12BJNClientSDK22MeetingServiceProtocolP11videoLayoutAA13BJNObservableCyAA05VideoG0OSgGvp">videoLayout</a></code> observable.</p>
 
                         <a href="Enums/VideoLayout.html" class="slightly-smaller">See more</a>
                       </div>
@@ -463,8 +521,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">VideoLayout</span> <span class="p">:</span> <span class="kt">NSInteger</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">VideoLayout</span> <span class="p">:</span> <span class="kt">NSInteger</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>

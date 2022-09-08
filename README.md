@@ -1,4 +1,3 @@
-
 [![BlueJeans iOS Client Software Development Kit](https://user-images.githubusercontent.com/23289872/127987669-3842046b-2f08-46e4-9949-6bf0cdb45d95.png "BlueJeans iOS Client Software Development Kit")](https://www.bluejeans.com "BlueJeans iOS Client Software Development Kit")
 
 # BlueJeans iOS Client Software Development Kit
@@ -39,9 +38,10 @@ The design of the SDK emphasizes **simplicity**. Developers can quickly integrat
 - 720p camera capture
 - Self and content views automatically update as the aspect ratio changes
 - Color customization of video layouts 
-- Support for Apple's [Combine](https://developer.apple.com/documentation/combine) framework (*new*)
+- Support for Apple's [Combine](https://developer.apple.com/documentation/combine) framework 
+- Individual stream control, create custom layouts, and request specific remote video streams
 
-## Current Version: 1.5.0
+## Current Version: 1.6.0
 
 ## Pre-requisites
 
@@ -84,7 +84,7 @@ Integrate the SDK using the below guidelines and use SDK APIs to join a meeting 
 ### Manual
 Steps:
 
-1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.5.0/Frameworks.zip`
+1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.6.0/Frameworks.zip`
 2. Unzip the file and copy the `Frameworks` folder to the root folder where the Xcode project(*xxxx.xcodeproj* file) is located.
 3. Open the Xcode project, click on the project settings and select the *App target -> General Tab*.
 4. Scroll to ***Embedded Binaries*** section of Xcode target.
@@ -262,8 +262,6 @@ videoDeviceService.selfViewSize.onChange {
 
 Content Share (Screen Share) from another device can come in many different sizes and aspect ratios. You should observe the `contentShareSize` property and make changes appropriately. 
 
-In order to enable full resolution of the content view, it should be embedded in a scroll view. The size can be set with the `contentShareSize` property. This will allow the view to be rendered at full resolution. The zoom factor can then be set to allow the view to fit on the screen. 
-
 ### Logging
 
 The iOS Client SDK will record logs. If you have experienced an issue you can upload these logs, with a comment and email for us to diagnose the issue.
@@ -292,11 +290,12 @@ The meeting service provides methods to join and leave meetings, change video la
 
 ### Video Layouts
 
-Represents how remote participants videos are composed:
+Represents how remote participant's videos are composed:
 
 - **Speaker** : Only the most recent speaker is shown, taking up the whole video stream.
 - **People** : The most recent speaker is shown as a larger video. A filmstrip of the next (up to) 5 most recent speakers is also seen.
 - **Gallery** : A collection of the most recent speakers is shown, arranged in a grid layout of equal sizes.
+- **Custom** : Override BlueJeans standard layouts and use the `VideoStreamService` to create your own.
 
 *videoLayout* reflects the current video layout, while *setVideoLayout(to layout: VideoLayout)* can be used to set a layout of your choice.
 
@@ -359,9 +358,9 @@ The BlueJeans meeting platform supports automatically generated closed captionin
 The ClosedCaptioningService provides functions and properties to check if automatic captions are available for the current meeting, to start and stop the captions on the client, and the captions themselves. 
 
 ## Color Customization
-The SDK supports limited customization of the colors in the video layouts. There are three colors the can be customized.
+The SDK supports limited customization of the colors in the video layouts. Three colors can be customized.
 
-- audioTileColor: The color of the background of audio only participants
+- audioTileColor: The color of the background of audio-only participants
 - containerColorOfAllTiles: The color of the background of the entire remote video container
 - videoTileBackgroundColor: The color of the background of video participants, whose video does not fill the entire view (eg. portrait videos)
 
@@ -382,12 +381,19 @@ let initParameters = BlueJeansSDKInitParams(customizationParams: customizationPa
 BlueJeansSDK.initialize(bluejeansSDKInitParams: initParameters)
 ```
 
+## VideoStreamService
+You either have the option of using the built in BlueJeans layouts for remote video - or you can use the `VideoStreamService` to create your own. 
+
+See the documentation for the `VideoStreamService` and the examples in the HelloBlueJeans layout for more details.
+
 ## SDK Sample Applications
 
 We have bundled two sample apps in this repo.
 
-1. *Hello BlueJeans* provides a bare-bones example to get you into a meeting and sending/receiving audio and video.
+1. *Hello BlueJeans* provides code examples for features of the SDK, including joining a meeting, getting remote video, and creating custom layouts.
 2. *Screen Share*, as the name suggests, guides you through the process of setting up your app and an app extension to enable screen sharing.
+
+The code in these sample applications will provide a working example of the API, but may not be production ready, for example, they may ignore error cases for simplicity. 
 
 ## Important Notes
 

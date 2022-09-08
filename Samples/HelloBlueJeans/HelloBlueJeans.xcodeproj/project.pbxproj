@@ -17,6 +17,12 @@
 		79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795D27D023A1005710F7 /* LogUploadViewController.swift */; };
 		79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */; };
 		79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */; };
+		A13F2AB828A1D5CB00842523 /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F2AB728A1D5CB00842523 /* CustomLayoutViewController.swift */; };
+		A13F2ABA28A1DC1000842523 /* CustomLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13F2AB928A1DC1000842523 /* CustomLayoutStoryboard.storyboard */; };
+		A14433FC28AB28B4003F5585 /* VideoTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14433FB28AB28B4003F5585 /* VideoTileView.swift */; };
+		A144340028AC515D003F5585 /* AdvancedCustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14433FF28AC515D003F5585 /* AdvancedCustomLayoutViewController.swift */; };
+		A144340228AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A144340128AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard */; };
+		A144344928ADD417003F5585 /* VideoViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A144344828ADD417003F5585 /* VideoViewContainer.swift */; };
 		A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */; };
 		A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */; };
 		A1C4AF4126E838FE006CE2C9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AF4026E838FE006CE2C9 /* MeetingViewController.swift */; };
@@ -123,6 +129,12 @@
 		79F6795D27D023A1005710F7 /* LogUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUploadViewController.swift; sourceTree = "<group>"; };
 		79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedCaptioningViewController.swift; sourceTree = "<group>"; };
 		79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentShareReceiveViewController.swift; sourceTree = "<group>"; };
+		A13F2AB728A1D5CB00842523 /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
+		A13F2AB928A1DC1000842523 /* CustomLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLayoutStoryboard.storyboard; sourceTree = "<group>"; };
+		A14433FB28AB28B4003F5585 /* VideoTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTileView.swift; sourceTree = "<group>"; };
+		A14433FF28AC515D003F5585 /* AdvancedCustomLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCustomLayoutViewController.swift; sourceTree = "<group>"; };
+		A144340128AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvancedCustomLayoutStoryboard.storyboard; sourceTree = "<group>"; };
+		A144344828ADD417003F5585 /* VideoViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewContainer.swift; sourceTree = "<group>"; };
 		A1C4AF3926E838FE006CE2C9 /* HelloBlueJeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBlueJeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C4AF3C26E838FE006CE2C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C4AF3E26E838FE006CE2C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +252,26 @@
 			path = ContentSharing;
 			sourceTree = "<group>";
 		};
+		A13F2AB628A1D5A500842523 /* VideoStreamControl */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2AB728A1D5CB00842523 /* CustomLayoutViewController.swift */,
+				A13F2AB928A1DC1000842523 /* CustomLayoutStoryboard.storyboard */,
+			);
+			path = VideoStreamControl;
+			sourceTree = "<group>";
+		};
+		A14433FA28AB283F003F5585 /* VideoStreamControl-Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				A14433FB28AB28B4003F5585 /* VideoTileView.swift */,
+				A144344828ADD417003F5585 /* VideoViewContainer.swift */,
+				A14433FF28AC515D003F5585 /* AdvancedCustomLayoutViewController.swift */,
+				A144340128AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard */,
+			);
+			path = "VideoStreamControl-Advanced";
+			sourceTree = "<group>";
+		};
 		A1C4AF3026E838FE006CE2C9 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +293,8 @@
 		A1C4AF3B26E838FE006CE2C9 /* HelloBlueJeans */ = {
 			isa = PBXGroup;
 			children = (
+				A14433FA28AB283F003F5585 /* VideoStreamControl-Advanced */,
+				A13F2AB628A1D5A500842523 /* VideoStreamControl */,
 				799B1D7E2820E413003DA696 /* VideoLayout */,
 				79E587CF27E00F3A008B6791 /* ContentSharing */,
 				79E587CD27E00EFC008B6791 /* ClosedCaptioning */,
@@ -367,8 +401,10 @@
 			files = (
 				79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */,
 				A1C4AF9226E84912006CE2C9 /* README.md in Resources */,
+				A144340228AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard in Resources */,
 				799B1D822820E450003DA696 /* VideoLayoutStoryboard.storyboard in Resources */,
 				A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */,
+				A13F2ABA28A1DC1000842523 /* CustomLayoutStoryboard.storyboard in Resources */,
 				79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */,
 				79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */,
 				A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */,
@@ -383,13 +419,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13F2AB828A1D5CB00842523 /* CustomLayoutViewController.swift in Sources */,
 				79F6795427CD9375005710F7 /* MenuTableViewController.swift in Sources */,
+				A14433FC28AB28B4003F5585 /* VideoTileView.swift in Sources */,
 				79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */,
 				A1C4AF4126E838FE006CE2C9 /* MeetingViewController.swift in Sources */,
 				A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */,
+				A144344928ADD417003F5585 /* VideoViewContainer.swift in Sources */,
 				79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */,
 				A1C4AF3F26E838FE006CE2C9 /* SceneDelegate.swift in Sources */,
 				79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */,
+				A144340028AC515D003F5585 /* AdvancedCustomLayoutViewController.swift in Sources */,
 				794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */,
 				799B1D802820E438003DA696 /* VideoLayoutViewController.swift in Sources */,
 			);

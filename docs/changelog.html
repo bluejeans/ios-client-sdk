@@ -225,6 +225,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/BJNParticipant.html">BJNParticipant</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CallQuality.html">CallQuality</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -249,6 +252,59 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ClosedCaptioningServiceProtocol.html">ClosedCaptioningServiceProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="VideoStreamService.html">VideoStreamService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/VideoStreamServiceProtocol.html">VideoStreamServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStreamConfiguration.html">VideoStreamConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/VideoStreamConfigurationResult.html">VideoStreamConfigurationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/VideoStreamConfigurationResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AttachParticipantStreamResult.html">AttachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AttachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DetachParticipantStreamResult.html">DetachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DetachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StreamQuality.html">StreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StreamPriority.html">StreamPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Resolution.html">Resolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FPS.html">FPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AttachedView.html">AttachedView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/VideoStreamProtocol.html">VideoStreamProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStream.html">VideoStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VideoStreamMetadata.html">VideoStreamMetadata</a>
               </li>
             </ul>
           </li>
@@ -294,6 +350,57 @@
           <div class="section-content">
             
             <h1 id='change-log' class='heading'>Change Log</h1>
+<h2 id='version-1-6-0' class='heading'>Version 1.6.0</h2>
+
+<hr>
+<h3 id='strong-em-breaking-changes-em-strong' class='heading'>🚨 <strong><em>Breaking Changes</em></strong></h3>
+
+<ul>
+<li>meetingService.audioMuted type changed from Bool? -&gt; Bool</li>
+<li>meetingService.videoMuted type changed from Bool? -&gt; Bool</li>
+<li>meetingService.audioMuteState type changed from MuteState? -&gt; MuteState</li>
+<li>meetingService.videoMuteState type changed from MuteState? -&gt; MuteState</li>
+</ul>
+
+<p>meetingService.setAudioMuted, and meetingService.setVideoMuted may now be set prior to joining a meeting,
+or while in the waiting room. Any updates to the localMuted state will retained while the SDK is in memory.</p>
+
+<ul>
+<li>Added <code>.custom</code> case to the <code><a href="Enums/VideoLayout.html">VideoLayout</a></code> enumeration</li>
+</ul>
+
+<p>This will only ever be set locally and can be ignored if not using custom layout controls.</p>
+<h3 id='new-license' class='heading'>New License</h3>
+
+<p>See the updated LICENSE.txt</p>
+<h3 id='added' class='heading'>Added</h3>
+<h4 id='individual-stream-control' class='heading'>Individual Stream Control</h4>
+
+<ul>
+<li>Create custom layouts and request specific streams of video using the <code>VideoStreamService</code></li>
+<li>Set the VideoLayout to <code>.custom</code></li>
+<li>Request streams of video with the <code>setVideoStreamConfiguration</code></li>
+<li>Observe active streams of video with the <code>videoStreams</code> array</li>
+<li>Render videos in your own custom sized views with <code>attachParticipantStreamToView</code></li>
+</ul><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    See the <code>VideoStreamService</code> for all additions
+
+</div>
+<h4 id='participantsservice-additions' class='heading'>ParticipantsService Additions</h4>
+
+<ul>
+<li>participantsService.getParticipantWithId(id: String) -&gt; BJNParticipant?</li>
+<li>BJNParticipant.isActiveSpeaker</li>
+<li>BJNParticipant.profilePictureURL</li>
+<li>BJNParticipant.callQuality</li>
+<li>BJNParticipant.hasVideoConnection</li>
+</ul>
+<h3 id='fixed' class='heading'>Fixed</h3>
+
+<ul>
+<li>Fixes issue where the content view was not visible in some cases</li>
+</ul>
 <h2 id='version-1-5-0' class='heading'>Version 1.5.0</h2>
 
 <hr>

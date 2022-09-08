@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FailureReason Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Enum/FailureReason" class="dashAnchor"></a>
+
+    <a title="FailureReason Enumeration Reference"></a>
+
+    <header class="header">
+      <div>
+        <img src="../../img/bjnlogo.png" style="height: 2.0em">
+      </div>
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../../index.html">
+          BlueJeans iOS SDK Documentation
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../../index.html">iOS Video SDK</a>
+      <img class="carat" src="../../img/carat.png" />
+      <span id="currentPage">FailureReason Enumeration Reference</span>
+      <script>
+        if (window.location.pathname.endsWith("index.html")) {
+          document.getElementById("currentPage").innerHTML = "About the SDK"
+          document.title = "BlueJeans IOS SDK"
+        }
+      </script>
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Documentation.html">Documentation</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../contentshareguide.html">ContentShareGuide</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../changelog.html">CHANGELOG</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../BlueJeansSDK.html">BlueJeansSDK</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/BlueJeansSDK.html">BlueJeansSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/BlueJeansSDKInitParams.html">BlueJeansSDKInitParams</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../MeetingService.html">MeetingService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/MeetingServiceProtocol.html">MeetingServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/MeetingJoinResult.html">MeetingJoinResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/VideoState.html">VideoState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/VideoStateInactiveReason.html">VideoStateInactiveReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/MeetingState.html">MeetingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/VideoLayout.html">VideoLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/LeaveMeetingError.html">LeaveMeetingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/MeetingInformation.html">MeetingInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/WaitingRoomEvent.html">WaitingRoomEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/MuteState.html">MuteState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../PermissionService.html">PermissionService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/PermissionServiceProtocol.html">PermissionServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/Permission.html">Permission</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/PermissionStatus.html">PermissionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../VideoDeviceService.html">VideoDeviceService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/VideoDeviceServiceProtocol.html">VideoDeviceServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/CameraDevice.html">CameraDevice</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../AudioDeviceService.html">AudioDeviceService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/AudioDeviceServiceProtocol.html">AudioDeviceServiceProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../LoggingService.html">LoggingService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/LoggingServiceProtocol.html">LoggingServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/LoggingMode.html">LoggingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/LogUploadResult.html">LogUploadResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../LoggingService.html#/s:12BJNClientSDK26LogUploadCompletionHandlera">LogUploadCompletionHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Chat.html">Chat</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/PublicChatServiceProtocol.html">PublicChatServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/PrivateChatServiceProtocol.html">PrivateChatServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/BJNChatMessage.html">BJNChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/BJNPrivateChatMessage.html">BJNPrivateChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Chat.html#/s:12BJNClientSDK13ParticipantIDa">ParticipantID</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../ContentShareService.html">ContentShareService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ContentShareServiceProtocol.html">ContentShareServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../ContentShareService.html#/s:12BJNClientSDK27ContentShareMessageProvidera">ContentShareMessageProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../ContentShareService.html#/s:12BJNClientSDK30ContentShareParametersProtocola">ContentShareParametersProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../ContentShareService.html#/s:12BJNClientSDK24ContentShareAvailabilitya">ContentShareAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../ContentShareService.html#/s:12BJNClientSDK26ContentShareExtensionStatea">ContentShareExtensionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../ContentShareService.html#/s:12BJNClientSDK22ContentShareStopReasona">ContentShareStopReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/BJNContentShareParameters.html">BJNContentShareParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../ModeratorWaitingRoomService.html">ModeratorWaitingRoomService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ModeratorWaitingRoomServiceProtocol.html">ModeratorWaitingRoomServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/WaitingRoomParticipant.html">WaitingRoomParticipant</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../ParticipantsService.html">ParticipantsService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ParticipantsServiceProtocol.html">ParticipantsServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/BJNParticipant.html">BJNParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/CallQuality.html">CallQuality</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../ModeratorControlsService.html">ModeratorControlsService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ModeratorControlsServiceProtocol.html">ModeratorControlsServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/RecordingState.html">RecordingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/RecordingSuccess.html">RecordingSuccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/RecordingError.html">RecordingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../ClosedCaptioningService.html">ClosedCaptioningService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ClosedCaptioningServiceProtocol.html">ClosedCaptioningServiceProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../VideoStreamService.html">VideoStreamService</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/VideoStreamServiceProtocol.html">VideoStreamServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/VideoStreamConfiguration.html">VideoStreamConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/VideoStreamConfigurationResult.html">VideoStreamConfigurationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/VideoStreamConfigurationResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/AttachParticipantStreamResult.html">AttachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/AttachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/DetachParticipantStreamResult.html">DetachParticipantStreamResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/DetachParticipantStreamResult/FailureReason.html">– FailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/StreamQuality.html">StreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/StreamPriority.html">StreamPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/Resolution.html">Resolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/FPS.html">FPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/AttachedView.html">AttachedView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/VideoStreamProtocol.html">VideoStreamProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/VideoStream.html">VideoStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/VideoStreamMetadata.html">VideoStreamMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Utility.html">Utility</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/BJNObservable.html">BJNObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/BJNMutableObservable.html">BJNMutableObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Utility.html#/s:12BJNClientSDK10CallbackIda">CallbackId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Utility.html#/s:12BJNClientSDK15CompletionBlocka">CompletionBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Customization.html">Customization</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/CustomizationParams.html">CustomizationParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/CustomBackground.html">CustomBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Customization.html#/s:12BJNClientSDK22ConfigureGradientLayera">ConfigureGradientLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/Defaults.html">Defaults</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>FailureReason</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FailureReason</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK29DetachParticipantStreamResultO13FailureReasonO12notInMeetingyA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/notInMeeting" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK29DetachParticipantStreamResultO13FailureReasonO12notInMeetingyA2EmF">notInMeeting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This API must be called in a meeting</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notInMeeting</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12BJNClientSDK29DetachParticipantStreamResultO13FailureReasonO11notAttachedyA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/notAttached" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12BJNClientSDK29DetachParticipantStreamResultO13FailureReasonO11notAttachedyA2EmF">notAttached</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The participantId video view was not attached</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notAttached</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2021 Copyright BlueJeans Network. All Rights Reserved.</p>
+    </section>
+  </body>
+</div>
+</html>
