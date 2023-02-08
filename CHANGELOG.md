@@ -1,5 +1,19 @@
 Change Log
 ==========
+## Version 1.7.0
+---------------------------------
+
+### API
+- No API changes
+
+### Minimum version updates
+- Minumum Xcode version: 13.4.1
+- Minumum Swift version: 5.6.1
+- Minimum iOS version: 14.0
+
+### Fixed
+- Miscellaneous quality improvements
+
 ## Version 1.6.0
 ---------------------------------
 

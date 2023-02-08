@@ -41,13 +41,13 @@ The design of the SDK emphasizes **simplicity**. Developers can quickly integrat
 - Support for Apple's [Combine](https://developer.apple.com/documentation/combine) framework 
 - Individual stream control, create custom layouts, and request specific remote video streams
 
-## Current Version: 1.6.0
+## Current Version: 1.7.0
 
 ## Pre-requisites
 
-This framework requires ***Swift 5.4 or later** and ***Xcode 12.5 or above***.
+This framework requires ***Swift 5.6.1 or later** and ***Xcode 13.4.1 or above***.
 
-Target deployment requires a minimum of *iOS version 13.0*.
+Target deployment requires a minimum of *iOS version 14.0*.
 
 All dependent frameworks are included as part of the *Frameworks* folder. 
 
@@ -84,7 +84,7 @@ Integrate the SDK using the below guidelines and use SDK APIs to join a meeting 
 ### Manual
 Steps:
 
-1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.6.0/Frameworks.zip`
+1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.7.0/Frameworks.zip`
 2. Unzip the file and copy the `Frameworks` folder to the root folder where the Xcode project(*xxxx.xcodeproj* file) is located.
 3. Open the Xcode project, click on the project settings and select the *App target -> General Tab*.
 4. Scroll to ***Embedded Binaries*** section of Xcode target.
@@ -303,7 +303,7 @@ Note that by default layout will be set by the meeting scheduler in their accoun
 
 #### Configuring 5x5 in gallery layout
 
-`BlueJeansSDK.initialize(...)` provides a parameter to turn on 5x5 gallery layouts - the default will be 3x3. 5x5 works well on most iOS devices that support iOS 13 or higher, but developers may want to consider limiting 5x5 on older devices if needed.
+`BlueJeansSDK.initialize(...)` provides a parameter to turn on 5x5 gallery layouts - the default will be 3x3. 5x5 works well on all supported devices, but developers may want to consider limiting 5x5 on older devices if needed.
 
 ## AudioDeviceService
 
@@ -450,7 +450,7 @@ The BlueJeans iOS Client SDK is closed source and proprietary. As a result, we c
 
 ## License
 
-Copyright © 2021 BlueJeans Network. All usage of the SDK is subject to the Developer Agreement that can be found [here](LICENSE).
+Copyright © 2023 BlueJeans Network. All usage of the SDK is subject to the Developer Agreement that can be found [here](LICENSE).
 Download the agreement and send an email to api-sdk@bluejeans.com with a signed version of this agreement. Before any commercial or public-facing usage of this SDK.
 
 ## Legal Requirements
