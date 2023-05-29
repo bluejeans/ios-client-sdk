@@ -90,24 +90,24 @@ class MeetingViewController: UIViewController {
     // MARK: Self View
 
     /// This method sets up the self view and adds it to a view that we have added to our storyboard.
-   func setupSelfView() {
-       videoDeviceService.selectCameraDevice(.front)
-       videoDeviceService.setEnableSelfVideoPreview(to: true)
-
-       let selfView = videoDeviceService.getSelfView()
-
-       selfViewContainer.insertSubview(selfView, belowSubview: selfViewCoverImage)
-
-       selfView.translatesAutoresizingMaskIntoConstraints = false
-       selfViewContainer.clipsToBounds = true
-
-       selfView.leftAnchor.constraint(equalTo: selfViewContainer.leftAnchor).isActive = true
-       selfView.rightAnchor.constraint(equalTo: selfViewContainer.rightAnchor).isActive = true
-       selfView.topAnchor.constraint(equalTo: selfViewContainer.topAnchor).isActive = true
-       selfView.bottomAnchor.constraint(equalTo: selfViewContainer.bottomAnchor).isActive = true
-       
-       self.selfView = selfView
-   }
+    func setupSelfView() {
+        videoDeviceService.selectCameraDevice(.front)
+        videoDeviceService.setEnableSelfVideoPreview(to: true)
+        
+        let selfView = videoDeviceService.getSelfView()
+        
+        selfViewContainer.insertSubview(selfView, belowSubview: selfViewCoverImage)
+        
+        selfView.translatesAutoresizingMaskIntoConstraints = false
+        selfViewContainer.clipsToBounds = true
+        
+        selfView.leftAnchor.constraint(equalTo: selfViewContainer.leftAnchor).isActive = true
+        selfView.rightAnchor.constraint(equalTo: selfViewContainer.rightAnchor).isActive = true
+        selfView.topAnchor.constraint(equalTo: selfViewContainer.topAnchor).isActive = true
+        selfView.bottomAnchor.constraint(equalTo: selfViewContainer.bottomAnchor).isActive = true
+        
+        self.selfView = selfView
+    }
     
     /// This method sets up a view to cover the self view when capture is not active, to avoid showing the last captured frame
     func setupSelfViewCover() {

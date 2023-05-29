@@ -4,8 +4,8 @@ Welcome to the "Share" sample application. This is a barebone sample application
 
 To run a device you will need:
 
-1. A Mac running Xcode 12.5, or higher.
-2. A physical device, running iOS 13.0 or higher. Setup for development with Xcode.
+1. A Mac running Xcode 14.1, or higher.
+2. A physical device, running iOS 14.0 or higher. Setup for development with Xcode.
 3. A copy of the latest XCFrameworks for the SDK, linked on Github. The *Frameworks* folder should be copied into the Samples directory. Use the appropriate frameworks for the version of Xcode you are using.
 
 Then, click on the Share project file, go to the Share target, go to the signing and capabilities tab. Choose your development team, and change the bundle identifier to something unique.
