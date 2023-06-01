@@ -5,8 +5,8 @@
 
 To run a device you will need
 
-1. Xcode 12.5 or higher
-2. A physical device<a href="#notes">(1)</a>, running iOS 13.0 or higher. Setup for development with Xcode.
+1. Xcode 14.1 or higher
+2. A physical device<a href="#notes">(1)</a>, running iOS 14.0 or higher. Setup for development with Xcode.
 3. A copy of the latest XCFrameworks for the SDK, linked on Github. The Frameworks folder should be copied into the Samples directory.
 
 Then, click on the HelloBlueJeans project file, go to the HelloBlueJeans target, go to the signing & capabilities tab. Choose your development team, and change the bundle identifier to something unique.

@@ -41,11 +41,11 @@ The design of the SDK emphasizes **simplicity**. Developers can quickly integrat
 - Support for Apple's [Combine](https://developer.apple.com/documentation/combine) framework 
 - Individual stream control, create custom layouts, and request specific remote video streams
 
-## Current Version: 1.7.0
+## Current Version: 1.8.0
 
 ## Pre-requisites
 
-This framework requires ***Swift 5.6.1 or later** and ***Xcode 13.4.1 or above***.
+This framework requires ***Swift 5.7.0 or later** and ***Xcode 14.1 or above***.
 
 Target deployment requires a minimum of *iOS version 14.0*.
 
@@ -84,7 +84,7 @@ Integrate the SDK using the below guidelines and use SDK APIs to join a meeting 
 ### Manual
 Steps:
 
-1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.7.0/Frameworks.zip`
+1. Download the xcframeworks from here: `https://swdl.bluejeans.com/bjnvideosdk/ios/1.8.0/Frameworks.zip`
 2. Unzip the file and copy the `Frameworks` folder to the root folder where the Xcode project(*xxxx.xcodeproj* file) is located.
 3. Open the Xcode project, click on the project settings and select the *App target -> General Tab*.
 4. Scroll to ***Embedded Binaries*** section of Xcode target.

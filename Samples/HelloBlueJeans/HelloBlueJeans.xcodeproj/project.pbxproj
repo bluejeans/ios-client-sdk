@@ -10,13 +10,69 @@
 		794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D508E27F29EAC002CD747 /* BJNSubscription.swift */; };
 		799B1D802820E438003DA696 /* VideoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1D7F2820E438003DA696 /* VideoLayoutViewController.swift */; };
 		799B1D822820E450003DA696 /* VideoLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799B1D812820E450003DA696 /* VideoLayoutStoryboard.storyboard */; };
-		79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */; };
+		79E587D527E01158008B6791 /* UIKitLogUploadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D427E01158008B6791 /* UIKitLogUploadStoryboard.storyboard */; };
 		79E587D727E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */; };
 		79E587D927E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */; };
 		79F6795427CD9375005710F7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795327CD9375005710F7 /* MenuTableViewController.swift */; };
-		79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795D27D023A1005710F7 /* LogUploadViewController.swift */; };
+		79F6795E27D023A1005710F7 /* UIKitLogUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795D27D023A1005710F7 /* UIKitLogUploadViewController.swift */; };
 		79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */; };
 		79F6796E27D84D23005710F7 /* ContentShareReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */; };
+		992FDA262A1EBB2F00458A23 /* BJNAPIClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97E2A1DDD6100458A23 /* BJNAPIClient.xcframework */; };
+		992FDA272A1EBB2F00458A23 /* BJNAPIClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97E2A1DDD6100458A23 /* BJNAPIClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA282A1EBB2F00458A23 /* BJNClientBaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9802A1DDD6100458A23 /* BJNClientBaseCore.xcframework */; };
+		992FDA292A1EBB2F00458A23 /* BJNClientBaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9802A1DDD6100458A23 /* BJNClientBaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA2A2A1EBB2F00458A23 /* BJNClientCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98D2A1DDD6200458A23 /* BJNClientCore.xcframework */; };
+		992FDA2B2A1EBB2F00458A23 /* BJNClientCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98D2A1DDD6200458A23 /* BJNClientCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA2C2A1EBB2F00458A23 /* BJNClientSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9AB2A1DE43000458A23 /* BJNClientSDK.xcframework */; };
+		992FDA2D2A1EBB2F00458A23 /* BJNClientSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9AB2A1DE43000458A23 /* BJNClientSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA2E2A1EBB2F00458A23 /* BJNHTTP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9812A1DDD6100458A23 /* BJNHTTP.xcframework */; };
+		992FDA2F2A1EBB2F00458A23 /* BJNHTTP.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9812A1DDD6100458A23 /* BJNHTTP.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA302A1EBB2F00458A23 /* BJNiOSBroadcastExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98E2A1DDD6200458A23 /* BJNiOSBroadcastExtension.xcframework */; };
+		992FDA312A1EBB2F00458A23 /* BJNiOSBroadcastExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98E2A1DDD6200458A23 /* BJNiOSBroadcastExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA322A1EBB2F00458A23 /* BJNiOSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97C2A1DDD6100458A23 /* BJNiOSCore.xcframework */; };
+		992FDA332A1EBB2F00458A23 /* BJNiOSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97C2A1DDD6100458A23 /* BJNiOSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA342A1EBB2F00458A23 /* bjnmediacapturer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9772A1DDD6100458A23 /* bjnmediacapturer.xcframework */; };
+		992FDA352A1EBB2F00458A23 /* bjnmediacapturer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9772A1DDD6100458A23 /* bjnmediacapturer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA362A1EBB2F00458A23 /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9862A1DDD6100458A23 /* CocoaLumberjack.xcframework */; };
+		992FDA372A1EBB2F00458A23 /* CocoaLumberjack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9862A1DDD6100458A23 /* CocoaLumberjack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA382A1EBB3000458A23 /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9752A1DDD6100458A23 /* CocoaLumberjackSwift.xcframework */; };
+		992FDA392A1EBB3000458A23 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9752A1DDD6100458A23 /* CocoaLumberjackSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA3A2A1EBB3000458A23 /* dvclient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9792A1DDD6100458A23 /* dvclient.xcframework */; };
+		992FDA3B2A1EBB3000458A23 /* dvclient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9792A1DDD6100458A23 /* dvclient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA3C2A1EBB3000458A23 /* dvdnr.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98B2A1DDD6200458A23 /* dvdnr.xcframework */; };
+		992FDA3D2A1EBB3000458A23 /* dvdnr.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98B2A1DDD6200458A23 /* dvdnr.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA3E2A1EBB3000458A23 /* fiber.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97F2A1DDD6100458A23 /* fiber.xcframework */; };
+		992FDA3F2A1EBB3000458A23 /* fiber.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97F2A1DDD6100458A23 /* fiber.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA402A1EBB3000458A23 /* fiberClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97A2A1DDD6100458A23 /* fiberClient.xcframework */; };
+		992FDA412A1EBB3000458A23 /* fiberClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97A2A1DDD6100458A23 /* fiberClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA422A1EBB3100458A23 /* koko.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9782A1DDD6100458A23 /* koko.xcframework */; };
+		992FDA432A1EBB3100458A23 /* koko.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9782A1DDD6100458A23 /* koko.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA442A1EBB3100458A23 /* Mixpanel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9832A1DDD6100458A23 /* Mixpanel.xcframework */; };
+		992FDA452A1EBB3100458A23 /* Mixpanel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9832A1DDD6100458A23 /* Mixpanel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA462A1EBB3100458A23 /* MMWormhole.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9822A1DDD6100458A23 /* MMWormhole.xcframework */; };
+		992FDA472A1EBB3100458A23 /* MMWormhole.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9822A1DDD6100458A23 /* MMWormhole.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA482A1EBB3100458A23 /* PubNub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97B2A1DDD6100458A23 /* PubNub.xcframework */; };
+		992FDA492A1EBB3100458A23 /* PubNub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97B2A1DDD6100458A23 /* PubNub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA4A2A1EBB3200458A23 /* PubNubMembership.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9762A1DDD6100458A23 /* PubNubMembership.xcframework */; };
+		992FDA4B2A1EBB3200458A23 /* PubNubMembership.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9762A1DDD6100458A23 /* PubNubMembership.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA4C2A1EBB3200458A23 /* PubNubSpace.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98C2A1DDD6200458A23 /* PubNubSpace.xcframework */; };
+		992FDA4D2A1EBB3200458A23 /* PubNubSpace.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98C2A1DDD6200458A23 /* PubNubSpace.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA4E2A1EBB3200458A23 /* PubNubUser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97D2A1DDD6100458A23 /* PubNubUser.xcframework */; };
+		992FDA4F2A1EBB3200458A23 /* PubNubUser.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD97D2A1DDD6100458A23 /* PubNubUser.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA502A1EBB3200458A23 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9842A1DDD6100458A23 /* Reachability.xcframework */; };
+		992FDA512A1EBB3300458A23 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9842A1DDD6100458A23 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA522A1EBB3300458A23 /* SocketRocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9872A1DDD6100458A23 /* SocketRocket.xcframework */; };
+		992FDA532A1EBB3300458A23 /* SocketRocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9872A1DDD6100458A23 /* SocketRocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA542A1EBB3300458A23 /* Swinject.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9892A1DDD6200458A23 /* Swinject.xcframework */; };
+		992FDA552A1EBB3300458A23 /* Swinject.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9892A1DDD6200458A23 /* Swinject.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA562A1EBB3300458A23 /* videoeffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9882A1DDD6200458A23 /* videoeffects.xcframework */; };
+		992FDA572A1EBB3400458A23 /* videoeffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9882A1DDD6200458A23 /* videoeffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA582A1EBB3400458A23 /* VZXRCVCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98F2A1DDD6200458A23 /* VZXRCVCommon.xcframework */; };
+		992FDA592A1EBB3400458A23 /* VZXRCVCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98F2A1DDD6200458A23 /* VZXRCVCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA5A2A1EBB3400458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9852A1DDD6100458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework */; };
+		992FDA5B2A1EBB3400458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD9852A1DDD6100458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992FDA5C2A1EBB3400458A23 /* VZXRCVVideoEffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98A2A1DDD6200458A23 /* VZXRCVVideoEffects.xcframework */; };
+		992FDA5D2A1EBB3500458A23 /* VZXRCVVideoEffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992FD98A2A1DDD6200458A23 /* VZXRCVVideoEffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A13F2AB828A1D5CB00842523 /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F2AB728A1D5CB00842523 /* CustomLayoutViewController.swift */; };
 		A13F2ABA28A1DC1000842523 /* CustomLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13F2AB928A1DC1000842523 /* CustomLayoutStoryboard.storyboard */; };
 		A14433FC28AB28B4003F5585 /* VideoTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14433FB28AB28B4003F5585 /* VideoTileView.swift */; };
@@ -30,88 +86,46 @@
 		A1C4AF4626E83901006CE2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4526E83901006CE2C9 /* Assets.xcassets */; };
 		A1C4AF4926E83901006CE2C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF4726E83901006CE2C9 /* LaunchScreen.storyboard */; };
 		A1C4AF9226E84912006CE2C9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1C4AF9126E84912006CE2C9 /* README.md */; };
-		A1E9FA7E2728AB70006CF8C2 /* BJNClientSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A042728A2FF00455F38 /* BJNClientSDK.xcframework */; };
-		A1F42A162728A2FF00455F38 /* bjnmediacapturer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F429FE2728A2FE00455F38 /* bjnmediacapturer.xcframework */; };
-		A1F42A172728A2FF00455F38 /* bjnmediacapturer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F429FE2728A2FE00455F38 /* bjnmediacapturer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A182728A2FF00455F38 /* BJNiOSBroadcastExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F429FF2728A2FE00455F38 /* BJNiOSBroadcastExtension.xcframework */; };
-		A1F42A192728A2FF00455F38 /* BJNiOSBroadcastExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F429FF2728A2FE00455F38 /* BJNiOSBroadcastExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A1A2728A2FF00455F38 /* PubNub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A002728A2FE00455F38 /* PubNub.xcframework */; };
-		A1F42A1B2728A2FF00455F38 /* PubNub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A002728A2FE00455F38 /* PubNub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A1C2728A2FF00455F38 /* SocketRocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A012728A2FE00455F38 /* SocketRocket.xcframework */; };
-		A1F42A1D2728A2FF00455F38 /* SocketRocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A012728A2FE00455F38 /* SocketRocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A1E2728A2FF00455F38 /* VZXRCVVideoEffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A022728A2FE00455F38 /* VZXRCVVideoEffects.xcframework */; };
-		A1F42A1F2728A2FF00455F38 /* VZXRCVVideoEffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A022728A2FE00455F38 /* VZXRCVVideoEffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A202728A2FF00455F38 /* fiberClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A032728A2FF00455F38 /* fiberClient.xcframework */; };
-		A1F42A212728A30000455F38 /* fiberClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A032728A2FF00455F38 /* fiberClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A222728A30000455F38 /* BJNClientSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A042728A2FF00455F38 /* BJNClientSDK.xcframework */; };
-		A1F42A232728A30000455F38 /* BJNClientSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A042728A2FF00455F38 /* BJNClientSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A242728A30000455F38 /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A052728A2FF00455F38 /* CocoaLumberjackSwift.xcframework */; };
-		A1F42A252728A30000455F38 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A052728A2FF00455F38 /* CocoaLumberjackSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A262728A30000455F38 /* BJNiOSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A062728A2FF00455F38 /* BJNiOSCore.xcframework */; };
-		A1F42A272728A30000455F38 /* BJNiOSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A062728A2FF00455F38 /* BJNiOSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A282728A30000455F38 /* BJNClientCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A072728A2FF00455F38 /* BJNClientCore.xcframework */; };
-		A1F42A292728A30000455F38 /* BJNClientCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A072728A2FF00455F38 /* BJNClientCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A2A2728A30000455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A082728A2FF00455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework */; };
-		A1F42A2B2728A30000455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A082728A2FF00455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A2C2728A30000455F38 /* dvclient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A092728A2FF00455F38 /* dvclient.xcframework */; };
-		A1F42A2D2728A30000455F38 /* dvclient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A092728A2FF00455F38 /* dvclient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A2E2728A30100455F38 /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0A2728A2FF00455F38 /* CocoaLumberjack.xcframework */; };
-		A1F42A2F2728A30100455F38 /* CocoaLumberjack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0A2728A2FF00455F38 /* CocoaLumberjack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A302728A30100455F38 /* Mixpanel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0B2728A2FF00455F38 /* Mixpanel.xcframework */; };
-		A1F42A312728A30100455F38 /* Mixpanel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0B2728A2FF00455F38 /* Mixpanel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A322728A30100455F38 /* Swinject.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0C2728A2FF00455F38 /* Swinject.xcframework */; };
-		A1F42A332728A30100455F38 /* Swinject.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0C2728A2FF00455F38 /* Swinject.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A342728A30100455F38 /* videoeffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0D2728A2FF00455F38 /* videoeffects.xcframework */; };
-		A1F42A352728A30100455F38 /* videoeffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0D2728A2FF00455F38 /* videoeffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A362728A30200455F38 /* BJNClientBaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0E2728A2FF00455F38 /* BJNClientBaseCore.xcframework */; };
-		A1F42A372728A30200455F38 /* BJNClientBaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0E2728A2FF00455F38 /* BJNClientBaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A382728A30200455F38 /* BJNAPIClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0F2728A2FF00455F38 /* BJNAPIClient.xcframework */; };
-		A1F42A392728A30200455F38 /* BJNAPIClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A0F2728A2FF00455F38 /* BJNAPIClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A3A2728A30200455F38 /* BJNHTTP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A102728A2FF00455F38 /* BJNHTTP.xcframework */; };
-		A1F42A3B2728A30200455F38 /* BJNHTTP.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A102728A2FF00455F38 /* BJNHTTP.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A3C2728A30200455F38 /* fiber.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A112728A2FF00455F38 /* fiber.xcframework */; };
-		A1F42A3D2728A30200455F38 /* fiber.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A112728A2FF00455F38 /* fiber.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A3E2728A30300455F38 /* koko.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A122728A2FF00455F38 /* koko.xcframework */; };
-		A1F42A3F2728A30300455F38 /* koko.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A122728A2FF00455F38 /* koko.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A402728A30300455F38 /* MMWormhole.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A132728A2FF00455F38 /* MMWormhole.xcframework */; };
-		A1F42A412728A30300455F38 /* MMWormhole.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A132728A2FF00455F38 /* MMWormhole.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A422728A30300455F38 /* VZXRCVCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A142728A2FF00455F38 /* VZXRCVCommon.xcframework */; };
-		A1F42A432728A30300455F38 /* VZXRCVCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A142728A2FF00455F38 /* VZXRCVCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1F42A442728A30400455F38 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A152728A2FF00455F38 /* Reachability.xcframework */; };
-		A1F42A452728A30400455F38 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F42A152728A2FF00455F38 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1550395297504CE00252F48 /* SwiftUILogUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1550394297504CE00252F48 /* SwiftUILogUploadView.swift */; };
+		B1603E0E2977A4F0002392E1 /* SwiftUILogUploadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1603E0D2977A4F0002392E1 /* SwiftUILogUploadViewModel.swift */; };
+		C6C918FF29C0024C00CEE52D /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C918FE29C0024C00CEE52D /* ARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A1F42A462728A30400455F38 /* Embed Frameworks */ = {
+		992FDA5E2A1EBB3500458A23 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1F42A452728A30400455F38 /* Reachability.xcframework in Embed Frameworks */,
-				A1F42A3D2728A30200455F38 /* fiber.xcframework in Embed Frameworks */,
-				A1F42A432728A30300455F38 /* VZXRCVCommon.xcframework in Embed Frameworks */,
-				A1F42A2D2728A30000455F38 /* dvclient.xcframework in Embed Frameworks */,
-				A1F42A2F2728A30100455F38 /* CocoaLumberjack.xcframework in Embed Frameworks */,
-				A1F42A372728A30200455F38 /* BJNClientBaseCore.xcframework in Embed Frameworks */,
-				A1F42A292728A30000455F38 /* BJNClientCore.xcframework in Embed Frameworks */,
-				A1F42A392728A30200455F38 /* BJNAPIClient.xcframework in Embed Frameworks */,
-				A1F42A272728A30000455F38 /* BJNiOSCore.xcframework in Embed Frameworks */,
-				A1F42A3F2728A30300455F38 /* koko.xcframework in Embed Frameworks */,
-				A1F42A1D2728A2FF00455F38 /* SocketRocket.xcframework in Embed Frameworks */,
-				A1F42A2B2728A30000455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Embed Frameworks */,
-				A1F42A352728A30100455F38 /* videoeffects.xcframework in Embed Frameworks */,
-				A1F42A192728A2FF00455F38 /* BJNiOSBroadcastExtension.xcframework in Embed Frameworks */,
-				A1F42A3B2728A30200455F38 /* BJNHTTP.xcframework in Embed Frameworks */,
-				A1F42A332728A30100455F38 /* Swinject.xcframework in Embed Frameworks */,
-				A1F42A312728A30100455F38 /* Mixpanel.xcframework in Embed Frameworks */,
-				A1F42A252728A30000455F38 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */,
-				A1F42A172728A2FF00455F38 /* bjnmediacapturer.xcframework in Embed Frameworks */,
-				A1F42A212728A30000455F38 /* fiberClient.xcframework in Embed Frameworks */,
-				A1F42A412728A30300455F38 /* MMWormhole.xcframework in Embed Frameworks */,
-				A1F42A232728A30000455F38 /* BJNClientSDK.xcframework in Embed Frameworks */,
-				A1F42A1B2728A2FF00455F38 /* PubNub.xcframework in Embed Frameworks */,
-				A1F42A1F2728A2FF00455F38 /* VZXRCVVideoEffects.xcframework in Embed Frameworks */,
+				992FDA332A1EBB2F00458A23 /* BJNiOSCore.xcframework in Embed Frameworks */,
+				992FDA432A1EBB3100458A23 /* koko.xcframework in Embed Frameworks */,
+				992FDA412A1EBB3000458A23 /* fiberClient.xcframework in Embed Frameworks */,
+				992FDA572A1EBB3400458A23 /* videoeffects.xcframework in Embed Frameworks */,
+				992FDA312A1EBB2F00458A23 /* BJNiOSBroadcastExtension.xcframework in Embed Frameworks */,
+				992FDA2B2A1EBB2F00458A23 /* BJNClientCore.xcframework in Embed Frameworks */,
+				992FDA372A1EBB2F00458A23 /* CocoaLumberjack.xcframework in Embed Frameworks */,
+				992FDA352A1EBB2F00458A23 /* bjnmediacapturer.xcframework in Embed Frameworks */,
+				992FDA472A1EBB3100458A23 /* MMWormhole.xcframework in Embed Frameworks */,
+				992FDA3F2A1EBB3000458A23 /* fiber.xcframework in Embed Frameworks */,
+				992FDA272A1EBB2F00458A23 /* BJNAPIClient.xcframework in Embed Frameworks */,
+				992FDA552A1EBB3300458A23 /* Swinject.xcframework in Embed Frameworks */,
+				992FDA4B2A1EBB3200458A23 /* PubNubMembership.xcframework in Embed Frameworks */,
+				992FDA532A1EBB3300458A23 /* SocketRocket.xcframework in Embed Frameworks */,
+				992FDA4F2A1EBB3200458A23 /* PubNubUser.xcframework in Embed Frameworks */,
+				992FDA452A1EBB3100458A23 /* Mixpanel.xcframework in Embed Frameworks */,
+				992FDA5B2A1EBB3400458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Embed Frameworks */,
+				992FDA3B2A1EBB3000458A23 /* dvclient.xcframework in Embed Frameworks */,
+				992FDA592A1EBB3400458A23 /* VZXRCVCommon.xcframework in Embed Frameworks */,
+				992FDA2D2A1EBB2F00458A23 /* BJNClientSDK.xcframework in Embed Frameworks */,
+				992FDA4D2A1EBB3200458A23 /* PubNubSpace.xcframework in Embed Frameworks */,
+				992FDA512A1EBB3300458A23 /* Reachability.xcframework in Embed Frameworks */,
+				992FDA2F2A1EBB2F00458A23 /* BJNHTTP.xcframework in Embed Frameworks */,
+				992FDA5D2A1EBB3500458A23 /* VZXRCVVideoEffects.xcframework in Embed Frameworks */,
+				992FDA392A1EBB3000458A23 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */,
+				992FDA3D2A1EBB3000458A23 /* dvdnr.xcframework in Embed Frameworks */,
+				992FDA292A1EBB2F00458A23 /* BJNClientBaseCore.xcframework in Embed Frameworks */,
+				992FDA492A1EBB3100458A23 /* PubNub.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,13 +136,41 @@
 		794D508E27F29EAC002CD747 /* BJNSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJNSubscription.swift; sourceTree = "<group>"; };
 		799B1D7F2820E438003DA696 /* VideoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLayoutViewController.swift; sourceTree = "<group>"; };
 		799B1D812820E450003DA696 /* VideoLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoLayoutStoryboard.storyboard; sourceTree = "<group>"; };
-		79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogUploadStoryboard.storyboard; sourceTree = "<group>"; };
+		79E587D427E01158008B6791 /* UIKitLogUploadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIKitLogUploadStoryboard.storyboard; sourceTree = "<group>"; };
 		79E587D627E0117F008B6791 /* ContentShareReceiveStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentShareReceiveStoryboard.storyboard; sourceTree = "<group>"; };
 		79E587D827E015BD008B6791 /* ClosedCaptioningStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClosedCaptioningStoryboard.storyboard; sourceTree = "<group>"; };
 		79F6795327CD9375005710F7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		79F6795D27D023A1005710F7 /* LogUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUploadViewController.swift; sourceTree = "<group>"; };
+		79F6795D27D023A1005710F7 /* UIKitLogUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLogUploadViewController.swift; sourceTree = "<group>"; };
 		79F6795F27D05B4D005710F7 /* ClosedCaptioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedCaptioningViewController.swift; sourceTree = "<group>"; };
 		79F6796D27D84D20005710F7 /* ContentShareReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentShareReceiveViewController.swift; sourceTree = "<group>"; };
+		992FD9752A1DDD6100458A23 /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = ../Frameworks/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
+		992FD9762A1DDD6100458A23 /* PubNubMembership.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNubMembership.xcframework; path = ../Frameworks/PubNubMembership.xcframework; sourceTree = "<group>"; };
+		992FD9772A1DDD6100458A23 /* bjnmediacapturer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = bjnmediacapturer.xcframework; path = ../Frameworks/bjnmediacapturer.xcframework; sourceTree = "<group>"; };
+		992FD9782A1DDD6100458A23 /* koko.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = koko.xcframework; path = ../Frameworks/koko.xcframework; sourceTree = "<group>"; };
+		992FD9792A1DDD6100458A23 /* dvclient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = dvclient.xcframework; path = ../Frameworks/dvclient.xcframework; sourceTree = "<group>"; };
+		992FD97A2A1DDD6100458A23 /* fiberClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiberClient.xcframework; path = ../Frameworks/fiberClient.xcframework; sourceTree = "<group>"; };
+		992FD97B2A1DDD6100458A23 /* PubNub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNub.xcframework; path = ../Frameworks/PubNub.xcframework; sourceTree = "<group>"; };
+		992FD97C2A1DDD6100458A23 /* BJNiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNiOSCore.xcframework; path = ../Frameworks/BJNiOSCore.xcframework; sourceTree = "<group>"; };
+		992FD97D2A1DDD6100458A23 /* PubNubUser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNubUser.xcframework; path = ../Frameworks/PubNubUser.xcframework; sourceTree = "<group>"; };
+		992FD97E2A1DDD6100458A23 /* BJNAPIClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNAPIClient.xcframework; path = ../Frameworks/BJNAPIClient.xcframework; sourceTree = "<group>"; };
+		992FD97F2A1DDD6100458A23 /* fiber.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiber.xcframework; path = ../Frameworks/fiber.xcframework; sourceTree = "<group>"; };
+		992FD9802A1DDD6100458A23 /* BJNClientBaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientBaseCore.xcframework; path = ../Frameworks/BJNClientBaseCore.xcframework; sourceTree = "<group>"; };
+		992FD9812A1DDD6100458A23 /* BJNHTTP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNHTTP.xcframework; path = ../Frameworks/BJNHTTP.xcframework; sourceTree = "<group>"; };
+		992FD9822A1DDD6100458A23 /* MMWormhole.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MMWormhole.xcframework; path = ../Frameworks/MMWormhole.xcframework; sourceTree = "<group>"; };
+		992FD9832A1DDD6100458A23 /* Mixpanel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Mixpanel.xcframework; path = ../Frameworks/Mixpanel.xcframework; sourceTree = "<group>"; };
+		992FD9842A1DDD6100458A23 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../Frameworks/Reachability.xcframework; sourceTree = "<group>"; };
+		992FD9852A1DDD6100458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVFeatureVirtualBackgrounds.xcframework; path = ../Frameworks/VZXRCVFeatureVirtualBackgrounds.xcframework; sourceTree = "<group>"; };
+		992FD9862A1DDD6100458A23 /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = ../Frameworks/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
+		992FD9872A1DDD6100458A23 /* SocketRocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketRocket.xcframework; path = ../Frameworks/SocketRocket.xcframework; sourceTree = "<group>"; };
+		992FD9882A1DDD6200458A23 /* videoeffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = videoeffects.xcframework; path = ../Frameworks/videoeffects.xcframework; sourceTree = "<group>"; };
+		992FD9892A1DDD6200458A23 /* Swinject.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Swinject.xcframework; path = ../Frameworks/Swinject.xcframework; sourceTree = "<group>"; };
+		992FD98A2A1DDD6200458A23 /* VZXRCVVideoEffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVVideoEffects.xcframework; path = ../Frameworks/VZXRCVVideoEffects.xcframework; sourceTree = "<group>"; };
+		992FD98B2A1DDD6200458A23 /* dvdnr.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = dvdnr.xcframework; path = ../Frameworks/dvdnr.xcframework; sourceTree = "<group>"; };
+		992FD98C2A1DDD6200458A23 /* PubNubSpace.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNubSpace.xcframework; path = ../Frameworks/PubNubSpace.xcframework; sourceTree = "<group>"; };
+		992FD98D2A1DDD6200458A23 /* BJNClientCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientCore.xcframework; path = ../Frameworks/BJNClientCore.xcframework; sourceTree = "<group>"; };
+		992FD98E2A1DDD6200458A23 /* BJNiOSBroadcastExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNiOSBroadcastExtension.xcframework; path = ../Frameworks/BJNiOSBroadcastExtension.xcframework; sourceTree = "<group>"; };
+		992FD98F2A1DDD6200458A23 /* VZXRCVCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVCommon.xcframework; path = ../Frameworks/VZXRCVCommon.xcframework; sourceTree = "<group>"; };
+		992FD9AB2A1DE43000458A23 /* BJNClientSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientSDK.xcframework; path = ../Frameworks/BJNClientSDK.xcframework; sourceTree = "<group>"; };
 		A13F2AB728A1D5CB00842523 /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
 		A13F2AB928A1DC1000842523 /* CustomLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLayoutStoryboard.storyboard; sourceTree = "<group>"; };
 		A14433FB28AB28B4003F5585 /* VideoTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTileView.swift; sourceTree = "<group>"; };
@@ -144,30 +186,9 @@
 		A1C4AF4826E83901006CE2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C4AF4A26E83901006CE2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C4AF9126E84912006CE2C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A1F429FE2728A2FE00455F38 /* bjnmediacapturer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = bjnmediacapturer.xcframework; path = ../Frameworks/bjnmediacapturer.xcframework; sourceTree = "<group>"; };
-		A1F429FF2728A2FE00455F38 /* BJNiOSBroadcastExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNiOSBroadcastExtension.xcframework; path = ../Frameworks/BJNiOSBroadcastExtension.xcframework; sourceTree = "<group>"; };
-		A1F42A002728A2FE00455F38 /* PubNub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PubNub.xcframework; path = ../Frameworks/PubNub.xcframework; sourceTree = "<group>"; };
-		A1F42A012728A2FE00455F38 /* SocketRocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketRocket.xcframework; path = ../Frameworks/SocketRocket.xcframework; sourceTree = "<group>"; };
-		A1F42A022728A2FE00455F38 /* VZXRCVVideoEffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVVideoEffects.xcframework; path = ../Frameworks/VZXRCVVideoEffects.xcframework; sourceTree = "<group>"; };
-		A1F42A032728A2FF00455F38 /* fiberClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiberClient.xcframework; path = ../Frameworks/fiberClient.xcframework; sourceTree = "<group>"; };
-		A1F42A042728A2FF00455F38 /* BJNClientSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientSDK.xcframework; path = ../Frameworks/BJNClientSDK.xcframework; sourceTree = "<group>"; };
-		A1F42A052728A2FF00455F38 /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = ../Frameworks/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
-		A1F42A062728A2FF00455F38 /* BJNiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNiOSCore.xcframework; path = ../Frameworks/BJNiOSCore.xcframework; sourceTree = "<group>"; };
-		A1F42A072728A2FF00455F38 /* BJNClientCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientCore.xcframework; path = ../Frameworks/BJNClientCore.xcframework; sourceTree = "<group>"; };
-		A1F42A082728A2FF00455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVFeatureVirtualBackgrounds.xcframework; path = ../Frameworks/VZXRCVFeatureVirtualBackgrounds.xcframework; sourceTree = "<group>"; };
-		A1F42A092728A2FF00455F38 /* dvclient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = dvclient.xcframework; path = ../Frameworks/dvclient.xcframework; sourceTree = "<group>"; };
-		A1F42A0A2728A2FF00455F38 /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = ../Frameworks/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
-		A1F42A0B2728A2FF00455F38 /* Mixpanel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Mixpanel.xcframework; path = ../Frameworks/Mixpanel.xcframework; sourceTree = "<group>"; };
-		A1F42A0C2728A2FF00455F38 /* Swinject.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Swinject.xcframework; path = ../Frameworks/Swinject.xcframework; sourceTree = "<group>"; };
-		A1F42A0D2728A2FF00455F38 /* videoeffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = videoeffects.xcframework; path = ../Frameworks/videoeffects.xcframework; sourceTree = "<group>"; };
-		A1F42A0E2728A2FF00455F38 /* BJNClientBaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNClientBaseCore.xcframework; path = ../Frameworks/BJNClientBaseCore.xcframework; sourceTree = "<group>"; };
-		A1F42A0F2728A2FF00455F38 /* BJNAPIClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNAPIClient.xcframework; path = ../Frameworks/BJNAPIClient.xcframework; sourceTree = "<group>"; };
-		A1F42A102728A2FF00455F38 /* BJNHTTP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BJNHTTP.xcframework; path = ../Frameworks/BJNHTTP.xcframework; sourceTree = "<group>"; };
-		A1F42A112728A2FF00455F38 /* fiber.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fiber.xcframework; path = ../Frameworks/fiber.xcframework; sourceTree = "<group>"; };
-		A1F42A122728A2FF00455F38 /* koko.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = koko.xcframework; path = ../Frameworks/koko.xcframework; sourceTree = "<group>"; };
-		A1F42A132728A2FF00455F38 /* MMWormhole.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MMWormhole.xcframework; path = ../Frameworks/MMWormhole.xcframework; sourceTree = "<group>"; };
-		A1F42A142728A2FF00455F38 /* VZXRCVCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VZXRCVCommon.xcframework; path = ../Frameworks/VZXRCVCommon.xcframework; sourceTree = "<group>"; };
-		A1F42A152728A2FF00455F38 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../Frameworks/Reachability.xcframework; sourceTree = "<group>"; };
+		B1550394297504CE00252F48 /* SwiftUILogUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILogUploadView.swift; sourceTree = "<group>"; };
+		B1603E0D2977A4F0002392E1 /* SwiftUILogUploadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILogUploadViewModel.swift; sourceTree = "<group>"; };
+		C6C918FE29C0024C00CEE52D /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,31 +196,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F42A442728A30400455F38 /* Reachability.xcframework in Frameworks */,
-				A1F42A3C2728A30200455F38 /* fiber.xcframework in Frameworks */,
-				A1F42A422728A30300455F38 /* VZXRCVCommon.xcframework in Frameworks */,
-				A1F42A2C2728A30000455F38 /* dvclient.xcframework in Frameworks */,
-				A1F42A2E2728A30100455F38 /* CocoaLumberjack.xcframework in Frameworks */,
-				A1F42A362728A30200455F38 /* BJNClientBaseCore.xcframework in Frameworks */,
-				A1F42A282728A30000455F38 /* BJNClientCore.xcframework in Frameworks */,
-				A1F42A382728A30200455F38 /* BJNAPIClient.xcframework in Frameworks */,
-				A1F42A262728A30000455F38 /* BJNiOSCore.xcframework in Frameworks */,
-				A1F42A3E2728A30300455F38 /* koko.xcframework in Frameworks */,
-				A1F42A1C2728A2FF00455F38 /* SocketRocket.xcframework in Frameworks */,
-				A1F42A2A2728A30000455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Frameworks */,
-				A1F42A342728A30100455F38 /* videoeffects.xcframework in Frameworks */,
-				A1F42A182728A2FF00455F38 /* BJNiOSBroadcastExtension.xcframework in Frameworks */,
-				A1F42A3A2728A30200455F38 /* BJNHTTP.xcframework in Frameworks */,
-				A1F42A322728A30100455F38 /* Swinject.xcframework in Frameworks */,
-				A1F42A302728A30100455F38 /* Mixpanel.xcframework in Frameworks */,
-				A1F42A242728A30000455F38 /* CocoaLumberjackSwift.xcframework in Frameworks */,
-				A1F42A162728A2FF00455F38 /* bjnmediacapturer.xcframework in Frameworks */,
-				A1F42A202728A2FF00455F38 /* fiberClient.xcframework in Frameworks */,
-				A1E9FA7E2728AB70006CF8C2 /* BJNClientSDK.xcframework in Frameworks */,
-				A1F42A402728A30300455F38 /* MMWormhole.xcframework in Frameworks */,
-				A1F42A222728A30000455F38 /* BJNClientSDK.xcframework in Frameworks */,
-				A1F42A1A2728A2FF00455F38 /* PubNub.xcframework in Frameworks */,
-				A1F42A1E2728A2FF00455F38 /* VZXRCVVideoEffects.xcframework in Frameworks */,
+				992FDA522A1EBB3300458A23 /* SocketRocket.xcframework in Frameworks */,
+				992FDA462A1EBB3100458A23 /* MMWormhole.xcframework in Frameworks */,
+				992FDA562A1EBB3300458A23 /* videoeffects.xcframework in Frameworks */,
+				992FDA3E2A1EBB3000458A23 /* fiber.xcframework in Frameworks */,
+				992FDA3A2A1EBB3000458A23 /* dvclient.xcframework in Frameworks */,
+				992FDA5C2A1EBB3400458A23 /* VZXRCVVideoEffects.xcframework in Frameworks */,
+				992FDA282A1EBB2F00458A23 /* BJNClientBaseCore.xcframework in Frameworks */,
+				992FDA4E2A1EBB3200458A23 /* PubNubUser.xcframework in Frameworks */,
+				992FDA342A1EBB2F00458A23 /* bjnmediacapturer.xcframework in Frameworks */,
+				992FDA542A1EBB3300458A23 /* Swinject.xcframework in Frameworks */,
+				992FDA4C2A1EBB3200458A23 /* PubNubSpace.xcframework in Frameworks */,
+				992FDA262A1EBB2F00458A23 /* BJNAPIClient.xcframework in Frameworks */,
+				992FDA2C2A1EBB2F00458A23 /* BJNClientSDK.xcframework in Frameworks */,
+				992FDA402A1EBB3000458A23 /* fiberClient.xcframework in Frameworks */,
+				992FDA322A1EBB2F00458A23 /* BJNiOSCore.xcframework in Frameworks */,
+				992FDA582A1EBB3400458A23 /* VZXRCVCommon.xcframework in Frameworks */,
+				992FDA502A1EBB3200458A23 /* Reachability.xcframework in Frameworks */,
+				992FDA2A2A1EBB2F00458A23 /* BJNClientCore.xcframework in Frameworks */,
+				992FDA382A1EBB3000458A23 /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				992FDA2E2A1EBB2F00458A23 /* BJNHTTP.xcframework in Frameworks */,
+				992FDA482A1EBB3100458A23 /* PubNub.xcframework in Frameworks */,
+				992FDA442A1EBB3100458A23 /* Mixpanel.xcframework in Frameworks */,
+				992FDA422A1EBB3100458A23 /* koko.xcframework in Frameworks */,
+				992FDA3C2A1EBB3000458A23 /* dvdnr.xcframework in Frameworks */,
+				992FDA5A2A1EBB3400458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework in Frameworks */,
+				992FDA362A1EBB2F00458A23 /* CocoaLumberjack.xcframework in Frameworks */,
+				992FDA302A1EBB2F00458A23 /* BJNiOSBroadcastExtension.xcframework in Frameworks */,
+				C6C918FF29C0024C00CEE52D /* ARKit.framework in Frameworks */,
+				992FDA4A2A1EBB3200458A23 /* PubNubMembership.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +253,10 @@
 		79E587CC27E00ED7008B6791 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				79F6795D27D023A1005710F7 /* LogUploadViewController.swift */,
-				79E587D427E01158008B6791 /* LogUploadStoryboard.storyboard */,
+				79F6795D27D023A1005710F7 /* UIKitLogUploadViewController.swift */,
+				79E587D427E01158008B6791 /* UIKitLogUploadStoryboard.storyboard */,
+				B1550394297504CE00252F48 /* SwiftUILogUploadView.swift */,
+				B1603E0D2977A4F0002392E1 /* SwiftUILogUploadViewModel.swift */,
 			);
 			path = Logging;
 			sourceTree = "<group>";
@@ -313,30 +340,35 @@
 		A1C4AF5026E83DBB006CE2C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1F42A0F2728A2FF00455F38 /* BJNAPIClient.xcframework */,
-				A1F42A0E2728A2FF00455F38 /* BJNClientBaseCore.xcframework */,
-				A1F42A072728A2FF00455F38 /* BJNClientCore.xcframework */,
-				A1F42A042728A2FF00455F38 /* BJNClientSDK.xcframework */,
-				A1F42A102728A2FF00455F38 /* BJNHTTP.xcframework */,
-				A1F429FF2728A2FE00455F38 /* BJNiOSBroadcastExtension.xcframework */,
-				A1F42A062728A2FF00455F38 /* BJNiOSCore.xcframework */,
-				A1F429FE2728A2FE00455F38 /* bjnmediacapturer.xcframework */,
-				A1F42A0A2728A2FF00455F38 /* CocoaLumberjack.xcframework */,
-				A1F42A052728A2FF00455F38 /* CocoaLumberjackSwift.xcframework */,
-				A1F42A092728A2FF00455F38 /* dvclient.xcframework */,
-				A1F42A112728A2FF00455F38 /* fiber.xcframework */,
-				A1F42A032728A2FF00455F38 /* fiberClient.xcframework */,
-				A1F42A122728A2FF00455F38 /* koko.xcframework */,
-				A1F42A0B2728A2FF00455F38 /* Mixpanel.xcframework */,
-				A1F42A132728A2FF00455F38 /* MMWormhole.xcframework */,
-				A1F42A002728A2FE00455F38 /* PubNub.xcframework */,
-				A1F42A152728A2FF00455F38 /* Reachability.xcframework */,
-				A1F42A012728A2FE00455F38 /* SocketRocket.xcframework */,
-				A1F42A0C2728A2FF00455F38 /* Swinject.xcframework */,
-				A1F42A0D2728A2FF00455F38 /* videoeffects.xcframework */,
-				A1F42A142728A2FF00455F38 /* VZXRCVCommon.xcframework */,
-				A1F42A082728A2FF00455F38 /* VZXRCVFeatureVirtualBackgrounds.xcframework */,
-				A1F42A022728A2FE00455F38 /* VZXRCVVideoEffects.xcframework */,
+				C6C918FE29C0024C00CEE52D /* ARKit.framework */,
+				992FD97E2A1DDD6100458A23 /* BJNAPIClient.xcframework */,
+				992FD9AB2A1DE43000458A23 /* BJNClientSDK.xcframework */,
+				992FD9802A1DDD6100458A23 /* BJNClientBaseCore.xcframework */,
+				992FD98D2A1DDD6200458A23 /* BJNClientCore.xcframework */,
+				992FD9812A1DDD6100458A23 /* BJNHTTP.xcframework */,
+				992FD98E2A1DDD6200458A23 /* BJNiOSBroadcastExtension.xcframework */,
+				992FD97C2A1DDD6100458A23 /* BJNiOSCore.xcframework */,
+				992FD9772A1DDD6100458A23 /* bjnmediacapturer.xcframework */,
+				992FD9862A1DDD6100458A23 /* CocoaLumberjack.xcframework */,
+				992FD9752A1DDD6100458A23 /* CocoaLumberjackSwift.xcframework */,
+				992FD9792A1DDD6100458A23 /* dvclient.xcframework */,
+				992FD98B2A1DDD6200458A23 /* dvdnr.xcframework */,
+				992FD97F2A1DDD6100458A23 /* fiber.xcframework */,
+				992FD97A2A1DDD6100458A23 /* fiberClient.xcframework */,
+				992FD9782A1DDD6100458A23 /* koko.xcframework */,
+				992FD9832A1DDD6100458A23 /* Mixpanel.xcframework */,
+				992FD9822A1DDD6100458A23 /* MMWormhole.xcframework */,
+				992FD97B2A1DDD6100458A23 /* PubNub.xcframework */,
+				992FD9762A1DDD6100458A23 /* PubNubMembership.xcframework */,
+				992FD98C2A1DDD6200458A23 /* PubNubSpace.xcframework */,
+				992FD97D2A1DDD6100458A23 /* PubNubUser.xcframework */,
+				992FD9842A1DDD6100458A23 /* Reachability.xcframework */,
+				992FD9872A1DDD6100458A23 /* SocketRocket.xcframework */,
+				992FD9892A1DDD6200458A23 /* Swinject.xcframework */,
+				992FD9882A1DDD6200458A23 /* videoeffects.xcframework */,
+				992FD98F2A1DDD6200458A23 /* VZXRCVCommon.xcframework */,
+				992FD9852A1DDD6100458A23 /* VZXRCVFeatureVirtualBackgrounds.xcframework */,
+				992FD98A2A1DDD6200458A23 /* VZXRCVVideoEffects.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -351,7 +383,7 @@
 				A1C4AF3526E838FE006CE2C9 /* Sources */,
 				A1C4AF3626E838FE006CE2C9 /* Frameworks */,
 				A1C4AF3726E838FE006CE2C9 /* Resources */,
-				A1F42A462728A30400455F38 /* Embed Frameworks */,
+				992FDA5E2A1EBB3500458A23 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,7 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E587D527E01158008B6791 /* LogUploadStoryboard.storyboard in Resources */,
+				79E587D527E01158008B6791 /* UIKitLogUploadStoryboard.storyboard in Resources */,
 				A1C4AF9226E84912006CE2C9 /* README.md in Resources */,
 				A144340228AC5312003F5585 /* AdvancedCustomLayoutStoryboard.storyboard in Resources */,
 				799B1D822820E450003DA696 /* VideoLayoutStoryboard.storyboard in Resources */,
@@ -422,8 +454,9 @@
 				A13F2AB828A1D5CB00842523 /* CustomLayoutViewController.swift in Sources */,
 				79F6795427CD9375005710F7 /* MenuTableViewController.swift in Sources */,
 				A14433FC28AB28B4003F5585 /* VideoTileView.swift in Sources */,
-				79F6795E27D023A1005710F7 /* LogUploadViewController.swift in Sources */,
+				79F6795E27D023A1005710F7 /* UIKitLogUploadViewController.swift in Sources */,
 				A1C4AF4126E838FE006CE2C9 /* MeetingViewController.swift in Sources */,
+				B1603E0E2977A4F0002392E1 /* SwiftUILogUploadViewModel.swift in Sources */,
 				A1C4AF3D26E838FE006CE2C9 /* AppDelegate.swift in Sources */,
 				A144344928ADD417003F5585 /* VideoViewContainer.swift in Sources */,
 				79F6796027D05B4D005710F7 /* ClosedCaptioningViewController.swift in Sources */,
@@ -432,6 +465,7 @@
 				A144340028AC515D003F5585 /* AdvancedCustomLayoutViewController.swift in Sources */,
 				794D508F27F29EAC002CD747 /* BJNSubscription.swift in Sources */,
 				799B1D802820E438003DA696 /* VideoLayoutViewController.swift in Sources */,
+				B1550395297504CE00252F48 /* SwiftUILogUploadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +617,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HE4P42JBGN;
 				INFOPLIST_FILE = HelloBlueJeans/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,7 +640,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HE4P42JBGN;
 				INFOPLIST_FILE = HelloBlueJeans/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

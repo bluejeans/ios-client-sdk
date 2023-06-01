@@ -1,5 +1,32 @@
 Change Log
 ==========
+
+## Version 1.8.0
+---------------------------------
+
+### Added
+- Flash toggle
+    - Toggle flash on and off based on bool value.
+    - iOS limits use of the flash when the front camera is active. Flash is available only when the back camera (or no camera) is active.
+    
+- Custom frame: Implemented mirrorSelfVideo
+
+### API  
+
+- Added new property for AVDeviceManager -> currentCameraDevice
+    - New property currentCameraDevice which will only update when a camera device is selected. This gives us the ability to select a camera device even if the video source is set to custom Use case. End user sets video source to custom which updates the currentVideoDevice to custom. The user can still swap to the front or back camera while the custom video source is selected which updates the currentCameraDevice. Once the user sets the video source back to camera we will select the last selected currentCameraDevice.
+- Added new property for VideoResolutionManagerProtocol for flash toggle
+    - VideoResolutionManagerProtocol.flashLightEnabled
+    - VideoResolutionManagerProtocol.updateFlashLightEnabled(_ enabled: Bool)
+    
+- CustomVideoServiceProtocol Additions
+    - customVideoService.pushCustomVideoFrame
+    - customVideoService.setVideoSource
+    - customVideoService.videoSource
+
+### Refectored
+- SDK log upload screen been converted to swiftUI.
+
 ## Version 1.7.0
 ---------------------------------
 
@@ -7,8 +34,8 @@ Change Log
 - No API changes
 
 ### Minimum version updates
-- Minumum Xcode version: 13.4.1
-- Minumum Swift version: 5.6.1
+- Minumum Xcode version: 14.1
+- Minumum Swift version: 5.7.0
 - Minimum iOS version: 14.0
 
 ### Fixed

@@ -6,44 +6,45 @@
 //
 
 import UIKit
+import SwiftUI
 
 /// A class used to navigate between different sample features of the BlueJeans SDK.
 ///
 /// - Tag: MenuTableViewController
 class MenuTableViewController: UITableViewController {
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Feature.allCases.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeatureCell", for: indexPath)
-
+        
         let menuItem = Feature.allCases[indexPath.row]
         cell.textLabel?.text = menuItem.name
         cell.imageView?.image = menuItem.image
-
+        
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Features"
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedFeature = Feature.allCases[indexPath.row]
-        let viewController = selectedFeature.storyboard.instantiateViewController(withIdentifier: selectedFeature.name)
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(selectedFeature.viewController, animated: true)
     }
     
     enum Feature: String, CaseIterable {
-        case logUpload
+        case swiftUILogUpload
+        case uikitLogUpload
         case closedCaptioning
         case contentShareReceive
         case videoLayout
@@ -52,12 +53,14 @@ class MenuTableViewController: UITableViewController {
         
         var name: String {
             switch self {
-            case .logUpload:
-                return "Log Upload"
+            case .swiftUILogUpload:
+                return "SwiftUI Log Upload"
+            case .uikitLogUpload:
+                return "UIKit Log Upload"
             case .closedCaptioning:
                 return "Closed Captioning"
             case .contentShareReceive:
-               return "Content Share Receive"
+                return "Content Share Receive"
             case .videoLayout:
                 return "Video Layout"
             case .customLayout:
@@ -69,7 +72,9 @@ class MenuTableViewController: UITableViewController {
         
         var image: UIImage {
             switch self {
-            case .logUpload:
+            case .swiftUILogUpload:
+                return UIImage(systemName: "square.and.arrow.up")!
+            case .uikitLogUpload:
                 return UIImage(systemName: "square.and.arrow.up")!
             case .closedCaptioning:
                 return UIImage(systemName: "captions.bubble")!
@@ -84,20 +89,22 @@ class MenuTableViewController: UITableViewController {
             }
         }
         
-        var storyboard: UIStoryboard {
+        var viewController: UIViewController {
             switch self {
-            case .logUpload:
-                return UIStoryboard(name: "LogUploadStoryboard", bundle: nil)
+            case .swiftUILogUpload:
+                return UIHostingController(rootView: SwiftUILogUploadView())
+            case .uikitLogUpload:
+                return UIStoryboard(name: "UIKitLogUploadStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             case .closedCaptioning:
-                return UIStoryboard(name: "ClosedCaptioningStoryboard", bundle: nil)
+                return UIStoryboard(name: "ClosedCaptioningStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             case .contentShareReceive:
-                return UIStoryboard(name: "ContentShareReceiveStoryboard", bundle: nil)
+                return UIStoryboard(name: "ContentShareReceiveStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             case .videoLayout:
-                return UIStoryboard(name: "VideoLayoutStoryboard", bundle: nil)
+                return UIStoryboard(name: "VideoLayoutStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             case .customLayout:
-                return UIStoryboard(name: "CustomLayoutStoryboard", bundle: nil)
+                return UIStoryboard(name: "CustomLayoutStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             case .advancedCustomLayout:
-                return UIStoryboard(name: "AdvancedCustomLayoutStoryboard", bundle: nil)
+                return UIStoryboard(name: "AdvancedCustomLayoutStoryboard", bundle: nil).instantiateViewController(withIdentifier: self.name)
             }
         }
     }
